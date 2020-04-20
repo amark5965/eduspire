@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Eduspire Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+
+  	<script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+  	<script src="./js/bootstrap.min.js"></script>
+    <script src="./js/owl.carousel.js"></script>
+    <script src="./js/all.js"></script>
+  	<script src="./js/custom.js"></script>
+  </head>
+  <body>
+    <div class="Login_main">
+      <!--<div class="login_container">
+        <div class="s_middle">
+          <div id="s_login">
+            <form action="javascript:;">
+              <fieldset class="clearfix">
+                <p >
+                  <span class="fa fa-user"></span>
+                  <input type="email" id="email" Placeholder="User Name" name="email" required/>
+                </p>
+                <p>
+                  <span class="fa fa-lock"></span>
+                  <input type="password" id="password" Placeholder="Password" name="password" required/>
+                  <span class="icon_eye"><i id="eyepass" class="fa fa-eye-slash"></i></span>
+                </p>
+                <div class="forgot">
+                    <p><a class="small-text" href="javascript:;" data-toggle="modal" data-target="#login_pop">Forgot password?</a></p>
+                    <p><button type="submit" value="Sign In" id="login_button">Sign In</button></p>
+                </div>
+              </fieldset>
+              <div class="clearfix"></div>
+            </form>
+            <div class="clearfix"></div>
+          </div>
+          <div class="logo_ar">
+            <a href="index.html"><img src='images/logo.png' alt="" /></a>
+            <div class="clearfix"></div>
+          </div>
+        </div>
+      </div>-->
+
+      <div class="container">
+        <div class="login_area">
+          <div class="box l">
+            <div class="logo_i text-center">
+              <a href="index.html"><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="login_slide">
+              <div class="owl-carousel" id="login_slide">
+                <div class="item">
+                  <div class="img">
+                    <img src="images/recommend1.jpg" alt="" />
+                  </div>
+                  <div class="desc">
+                    <h3>Create new events</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="img">
+                    <img src="images/recommend2.jpg" alt="" />
+                  </div>
+                  <div class="desc">
+                    <h3>Create new events</h3>
+                    <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box r">
+            <div class="signin" id="signin">
+              <h2>Sign in</h2>
+              <p>Enter your email address and password to access admin panel.</p>
+              <form action="javascript:;">
+                <div class="fields">
+                  <div class="field">
+                    <label>Email address</label>
+                    <div class="inputbox">
+                      <input type="email" placeholder="Enter email" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Password <a href="javascript:;" data-toggle="modal" data-target="#login_pop">Forgot password?</a></label>
+                    <div class="inputbox">
+                      <input type="password" placeholder="Password" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="check" for="remember">
+                      <input type="checkbox" id="remember" />
+                      <span><i class="far fa-check-square"></i> Remember Me</span>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn s_btn">Sign in</button>
+                </div>
+              </form>
+              <div class="ac_l">
+                <p>Don't have an account? <a href="javascript:;" class="s_up">Sign up</a></p>
+                <div class="social">
+                  <ul>
+                    <li><a href="javascript"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="javascript"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="javascript"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="signup" id="signup">
+              <h2>Sign Up</h2>
+              <p>Enter your email address and password to access admin panel.</p>
+              <form action="javascript:;">
+                <div class="fields">
+                  <div class="field">
+                    <label>Your full name</label>
+                    <div class="inputbox">
+                      <input type="text" placeholder="Your full name" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Email address</label>
+                    <div class="inputbox">
+                      <input type="email" placeholder="Enter email" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Password</label>
+                    <div class="inputbox">
+                      <input type="password" placeholder="Password" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label class="check" for="remember">
+                      <input type="checkbox" id="remember" />
+                      <span><i class="far fa-check-square"></i> I accept <a href="javascript:;">Terms and conditions</a></span>
+                    </label>
+                  </div>
+                  <button type="submit" class="btn s_btn">Sign Up</button>
+                </div>
+              </form>
+              <div class="ac_l">
+                <p>Already Have Account? <a href="javascript:;" class="l_in">Log In</a></p>
+                <div class="social">
+                  <ul>
+                    <li><a href="javascript"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="javascript"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="javascript"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- The Modal -->
+      <div class="modal" id="login_pop">
+        <div class="modal-dialog loginpop">
+          <div class="modal-content">
+            <h4 class="modal-title">Change Password</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <form action="javascript:;">
+                <div class="fields">
+                  <div class="field">
+                    <label>User ID:</label>
+                    <div class="inputbox">
+                      <input type="text" placeholder="user id" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Old Password:</label>
+                    <div class="inputbox">
+                      <input type="password" placeholder="Old password" />
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>New Password:</label>
+                    <div class="inputbox">
+                      <input type="password" placeholder="New passowrd" />
+                      <span class="icon_eye"><i class="fa fa-eye-slash"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label>Confirm Password:</label>
+                    <div class="inputbox">
+                      <input type="password" placeholder="Confirm password" />
+                      <span class="icon_eye"><i class="fa fa-eye-slash"></i></span>
+                    </div>
+                  </div>
+                  <div class="field">
+                    <label></label>
+                    <div class="buttons text-left">
+                      <button type="button" class="btn btn-success">Change Password</button>
+                      <button type="button" class="btn btn-danger">Cancel</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
