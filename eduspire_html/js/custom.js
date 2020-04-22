@@ -48,15 +48,6 @@ $(document).ready(function() {
     $("#signup").show();
   });
 
-  // $('body').on('mouseenter mouseleave','.dropdown',function(e){
-  //   var _d=$(e.target).closest('.dropdown');
-  //   if (e.type === 'mouseenter')_d.addClass('show');
-  //   setTimeout(function(){
-  //     _d.toggleClass('show', _d.is(':hover'));
-  //     $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
-  //   },300);
-  // });
-
   $(".cat_gal .item").hover(
     function () {
       $(this).addClass("expand");
@@ -80,37 +71,31 @@ $(document).ready(function() {
        $('.table-responsive').css( "overflow", "auto" );
   });
 
-  function getDateTime() {
-        var now     = new Date(); 
-        var year    = now.getFullYear();
-        var month   = now.getMonth()+1; 
-        var day     = now.getDate();
-        var hour    = now.getHours();
-        var minute  = now.getMinutes();
-        var second  = now.getSeconds(); 
-        if(month.toString().length == 1) {
-             month = '0'+month;
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#stud_thumbnail').attr('src', e.target.result);
         }
-        if(day.toString().length == 1) {
-             day = '0'+day;
-        }   
-        if(hour.toString().length == 1) {
-             hour = '0'+hour;
-        }
-        if(minute.toString().length == 1) {
-             minute = '0'+minute;
-        }
-        if(second.toString().length == 1) {
-             second = '0'+second;
-        }   
-        var dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;   
-         return dateTime;
+        
+        reader.readAsDataURL(input.files[0]);
     }
+  }
 
-    setInterval(function(){
-        currentTime = getDateTime();
-        document.getElementById("datetime").innerHTML = currentTime;
-    }, 1000);
+  $("#stud_vimg").change(function(){
+      readURL(this);
+  });
+});
+
+$(function() {
+  $(".datepicker").datepicker();
+  $('select[multiple]').multiselect();
+  $('#langOpt').multiselect({
+      columns: 1,
+      placeholder: 'Select Languages',
+      search: true
+  });
 });
 
 // $(document).ready(function(){

@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Eduspire Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" />
+    <link href="./css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="./css/jquery.multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/owl.carousel.css" type="text/css" />
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
+  </head>
+  <body>
+        <header class="home_header">
+          <div class="sidebar-header">
+            <a href="javascript:;">
+              <img class="small" src="images/logo.png" alt="" />
+              <img src="images/logo.png" alt="" />
+            </a>
+          </div>
+          <nav class="navbar navbar-expand-sm">
+              <button type="button" id="sidebarCollapse" class="btn btn-sidebar">
+                  <span><i class="fas fa-align-left"></i></span>
+              </button>
+              <div class="mobile_bg"></div>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <span class="close_icon" style="display:none;">X</span>
+                  <ul class="navbar-nav float-right">
+                     <li class="nav-item dropdown login">
+                         <a class="nav-link dropdown-toggle" href="Javascript:;" data-toggle="dropdown"><i class="fas fa-user-circle" aria-hidden="true"></i><i class="fas fa-angle-down" aria-hidden="true"></i></a>
+                         <div class="dropdown-menu">
+                             <div class="dropdown-header text-center">
+                               <img class="img-md rounded-circle" src="images/face8.jpg" alt="Profile image" />
+                               <p class="font-weight-semibold">Allen Moreno</p>
+                               <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
+                             </div>
+                             <a class="dropdown-item" href="javascript:;">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                My Profile
+                             </a>
+                             <a class="dropdown-item" href="javascript:;">
+                                <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+                                Logout
+                             </a>
+                         </div>
+                     </li>
+                 </ul>
+              </div>
+          </nav>
+          <div class="clearfix"></div>
+        </header>
+
+        <div class="wrapper">
+          <nav id="sidebar">
+            <div class="user_head">
+              <a href="javascript:;" class="box">
+                <div class="icon">
+                  <i class="fas fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <p>Admin</p>
+              </a>
+            </div>
+            <ul class="components">
+              <li>
+                <a href="index.html">
+                  <i class="fas menu_icon fa-school"></i>
+                  <span class="menu-title">Courses</span>
+                </a>
+              </li>
+              <li>
+                <a href="batch.html">
+                  <i class="fas menu_icon fa-calendar-week"></i>
+                  <span class="menu-title">Batches</span>
+                </a>
+              </li>
+              <li>
+                <a href="student.html">
+                  <i class="fas menu_icon fa-user-graduate"></i>
+                  <span class="menu-title">Students</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-clipboard"></i>
+                  <span class="menu-title">Fee Record</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-file-medical-alt"></i>
+                  <span class="menu-title">Documents</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-cart-plus"></i>
+                  <span class="menu-title">Products</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-user-tie"></i>
+                  <span class="menu-title">Employees</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-hand-holding-usd"></i>
+                  <span class="menu-title">Income</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-level-down-alt"></i>
+                  <span class="menu-title">Expenses</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-search-location"></i>
+                  <span class="menu-title">Inquiry</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-history"></i>
+                  <span class="menu-title">History</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-user"></i>
+                  <span class="menu-title">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-university"></i>
+                  <span class="menu-title">Institute</span>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <i class="fas menu_icon fa-cogs"></i>
+                  <span class="menu-title">All Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="content">
+            <div class="content_area">
+              <div class="content_header">
+                <h2>Student Details</h2>
+              </div>
+              <div class="adds_area">
+                <button type="button" class="s_btn_i" data-toggle="modal" data-target="#student_popup">Add Student <span><i class="fas fa-plus"></i><span></button>
+                <button type="button" class="s_btn_i">Refresh <span><i class="fas fa-redo-alt"></i><span></button>
+                <button type="button" class="s_btn_i">Export <span><i class="fas fa-file-export"></i><span></button>
+              </div>
+              <div class="searchbox">
+                <div class="inputbox">
+                  <i class="fas fa-search"></i>
+                  <input type="text" placeholder="search" />
+                </div>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Full Name</th>
+                      <th>Birth Date</th>
+                      <th>Contact Number</th>
+                      <th>Email</th>
+                      <th>Parent Name</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>40</td>
+                      <td>Binayak adhikari</td>
+                      <td>02/25/19</td>
+                      <td>9876757676</td>
+                      <td>binayak@gmail.com</td>
+                      <td>Bishwa</td>
+                      <td>
+                        <div class="action_buttons">
+                          <a href="javascript:" class="btn"><i class="fas fa-edit"></i></a>
+                          <div class="btn_group"> 
+                            <a class="btn" href="javascript:;" data-hint="print bill" data-toggle="modal" data-target="#print_bill"><i class="fas fa-print"></i></a>
+                            <a class="btn" href="javascript:" data-hint="print Id card" data-toggle="modal" data-target="#id_card"><i class="far fa-file-powerpoint"></i></a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <footer class="home_footer">
+                <article class="footer_t">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box l">
+                              <p>&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box r">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </article>
+            </footer>
+
+            <!-- The Modal -->
+            <div class="modal pop_up" id="student_popup">
+              <div class="modal-dialog loginpop large_modal">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title"><i class="fas fa-user-circle"></i></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="heading">
+                    <h3>Add New Student</h3>
+                  </div>
+                  <div class="modal-body">
+                    <form class="c_form" action="javascript:;">
+                      <div class="row">
+                        <div class="col-md-5 col-sm-5">
+                          <div class="lagend s_i">
+                            <h5><span>01:Student Information</span></h5>
+                            <div class="fields">
+                              <div class="field">
+                                <label>Student ID: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="Student id" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Full Name: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="Full name" />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <div class="field cl_2">
+                                    <label>Nationality: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <select>
+                                          <option>Select</option>
+                                          <option>Indian</option>
+                                          <option>American</option>
+                                          <option>Ireland</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="field cl_3">
+                                    <label>Gender: </label>
+                                    <div class="inputbox">
+                                      <select>
+                                          <option>Select</option>
+                                          <option>Male</option>
+                                          <option>Female</option>
+                                      </select>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Birth Date: <span>*</span></label>
+                                <div class="inputbox date">
+                                  <i class="far fa-calendar-alt"></i>
+                                  <input type="text" class="datepicker" id="datepicker" placeholder="mm/dd/yyyy" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Category: </label>
+                                <div class="inputbox">
+                                  <select>
+                                      <option>Select Category</option>
+                                      <option>Male</option>
+                                      <option>Female</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-7">
+                                  <div class="field cl_2">
+                                    <label>Phone Number: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="Phone" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-5">
+                                  <div class="field cl_3">
+                                    <label>Urgent: </label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Is Married: <span>*</span></label>
+                                <div class="inputbox">
+                                  <select>
+                                      <option>Select</option>
+                                      <option>Married</option>
+                                      <option>Unmarried</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Address: <span>*</span></label>
+                                <div class="inputbox">
+                                  <select>
+                                      <option>Select</option>
+                                      <option>Fullbari</option>
+                                      <option>Noida</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Parent Name: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="Parent name" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Joining Date: <span>*</span></label>
+                                <div class="inputbox date">
+                                  <i class="far fa-calendar-alt"></i>
+                                  <input type="text" class="datepicker" id="datepicker1" placeholder="mm/dd/yyyy" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Email Address:</label>
+                                <div class="inputbox">
+                                  <input type="email" placeholder="Email address" />
+                                </div>
+                              </div>                        
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                          <div class="lagend c_n">
+                            <h5><span>02:Batch Information</span></h5>
+                            <div class="fields">
+                              <div class="field">
+                                <label>Batch Name: </label>
+                                <div class="inputbox">
+                                  <select name="langOpt[]" multiple id="langOpt">
+                                    <option value="C++">C++</option>
+                                    <option value="C#">C#</option>
+                                    <option value="Java">Java</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>                        
+                          </div>
+                          <div class="lagend a_i">
+                            <h5><span>03:Amount Information</span></h5>
+                            <div class="fields">
+                              <div class="field">
+                                <label>Total Fee: </label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Paid Fee: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Due Fee: </label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                          <div class="lagend">
+                            <h5><span>02:Photo Information</span></h5>
+                            <div class="stud_img">
+                              <div class="img_box">
+                                <img src="" id="stud_thumbnail" alt="" />
+                              </div>
+                              <div class="buttons">
+                                <label class="btn btn_stud" for="stud_vimg">
+                                    <input type="file" id="stud_vimg" />
+                                    <span>Upload</span>
+                                </label>
+                                <button type="button" class="s_btn">Cancel</button>
+                              </div>
+                            </div>                       
+                          </div>
+                          <div class="stud_note">
+                            <h5>Add Note:</h5>
+                            <textarea placeholder=""></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="buttons text-center">
+                        <button type="button" class="s_btn_i">Save <span><i class="fas fa-save"></i><span></button>
+                        <button type="button" class="s_btn_i btn-danger">Cancel <span><i class="fas fa-times-circle"></i><span></button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal pop_up" id="id_card">
+              <div class="modal-dialog loginpop idcard">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title"><i class="fas fa-user-circle"></i></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="id_card">
+                      <div class="blue_b">
+                        <h3>Infomax Private Limited</h3>
+                        <p>Fullbari Pakhara Nepal, 9495748348</p>
+                      </div>
+                      <div class="id_img">
+                        <div class="img">
+                          <img src="images/subt_ser_team_1.jpg" alt="" />
+                        </div>
+                        <p>Binayak Adhikari</p>
+                        <p class="t">Student</p>
+                      </div>
+                      <div class="info">
+                        <p><b>ID #:</b> <span>40</span></p>
+                        <p><b>Batch Name:</b> <span>Computer basic and diploma</span></p>
+                        <p><b>E-Mail:</b> <span>binayak@gmail.com</span></p>
+                        <p><b>Phone:</b> <span>8765757546</span></p>
+                        <p><b>Date:</b> <span>01/01/2019 to 01/01/2020</span></p>
+                      </div>
+                      <div class="signbox">
+                        <div class="ofc_sign">
+                          <div class="s_b"></div>
+                          <h5>Office Signature:</h5>
+                        </div>
+                        <div class="ofc_sign">
+                          <div class="s_b"></div>
+                          <h5>Student Signature</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal pop_up" id="print_bill">
+              <div class="modal-dialog loginpop printbill">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title"><i class="fas fa-print"></i> Print Bill</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="print_bill">
+                      <form class="c_form" action="javascript:;">
+                        <div class="fields">
+                          <div class="field">
+                            <label>Bill Date: <span>*</span></label>
+                            <div class="inputbox date">
+                              <i class="far fa-calendar-alt"></i>
+                              <input type="text" class="datepicker" id="datepicker" placeholder="mm/dd/yyyy" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Bill Id: <span>*</span></label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Bill id" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Student Name: </label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Student name" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Total Fee Amount: </label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Total fee amount" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Paid Amount: </label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Paid amount" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Due Amount: </label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Due amount" />
+                            </div>
+                          </div>
+                          <div class="field">
+                            <label>Due Amount: </label>
+                            <div class="inputbox">
+                              <input type="text" placeholder="Due amount" />
+                            </div>
+                          </div>
+                          <div class="field textar">
+                            <label>Particular: <span>*</span></label>
+                            <div class="inputbox">
+                              <textarea placeholder="course fee"></textarea>
+                            </div>
+                          </div> 
+                          <div class="buttons text-center">
+                            <button type="button" class="s_btn_i">Print Bill <span><i class="fas fa-print"></i><span></button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="./js/jquery-3.4.1.min.js"></script>
+      <script src="./js/jquery-ui.min.js"></script>
+      <script src="./js/jquery.multiselect.js"></script>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/owl.carousel.js"></script>
+      <script src="./js/all.js"></script>
+      <script src="./js/custom.js"></script>
+  </body>
+</html>

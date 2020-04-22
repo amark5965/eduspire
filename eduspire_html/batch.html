@@ -155,10 +155,10 @@
           <div id="content">
             <div class="content_area">
               <div class="content_header">
-                <h2>Courses</h2>
+                <h2>Batch Details</h2>
               </div>
               <div class="adds_area">
-                <button type="button" class="s_btn_i" data-toggle="modal" data-target="#course_popup">Add Course <span><i class="fas fa-plus"></i><span></button>
+                <button type="button" class="s_btn_i" data-toggle="modal" data-target="#batch_popup">Add Batch <span><i class="fas fa-plus"></i><span></button>
                 <button type="button" class="s_btn_i">Refresh <span><i class="fas fa-redo-alt"></i><span></button>
                 <button type="button" class="s_btn_i">Export <span><i class="fas fa-file-export"></i><span></button>
               </div>
@@ -174,22 +174,22 @@
                   <thead>
                     <tr>
                       <th>ID</th>
-                      <th>Course Code</th>
-                      <th>Course Name</th>
-                      <th>Duration</th>
-                      <th>Amount</th>
+                      <th>Batch Name</th>
+                      <th>Start Date</th>
+                      <th>End Date</th>
+                      <th>Time</th>
                       <th>Remarks</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>6</td>
-                      <td>C000-6</td>
-                      <td>Video Editing</td>
-                      <td>3 Month(s)</td>
-                      <td>15000</td>
-                      <td>For Photoshop Certificate Student</td>
+                      <td>1</td>
+                      <td>Compute basic and diploma</td>
+                      <td>02/25/19</td>
+                      <td>12/31/2019</td>
+                      <td>00:00:00 to 00:00:00</td>
+                      <td>Morning</td>
                       <td>
                         <div class="action_buttons">
                           <a href="javascript:" class="btn"><i class="fas fa-edit"></i></a>
@@ -221,65 +221,133 @@
             </footer>
 
             <!-- The Modal -->
-            <div class="modal pop_up" id="course_popup">
-              <div class="modal-dialog loginpop">
+            <div class="modal pop_up" id="batch_popup">
+              <div class="modal-dialog loginpop big_modal">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h4 class="modal-title"><i class="fas fa-user-circle"></i></h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                   </div>
                   <div class="heading">
-                    <h3>Add New Course</h3>
+                    <h3>Add New Batch</h3>
                   </div>
                   <div class="modal-body">
                     <form class="c_form" action="javascript:;">
-                      <div class="lagend">
-                        <h5><span>Course Information</span></h5>
-                        <div class="fields">
-                          <div class="field">
-                            <label>Course ID: <span>*</span></label>
-                            <div class="inputbox">
-                              <input type="text" placeholder="customer id" />
+                      <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                          <div class="lagend b_i">
+                            <h5><span>01:Batch Information</span></h5>
+                            <div class="fields">
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>Batch ID: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="batch id" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>Batch Code: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="batch code" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Batch Name: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="batch name" />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>Start Time: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="00:00:00" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>End Time: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" placeholder="00:00:00" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>Start Date: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" class="datepicker" id="datepicker" placeholder="mm/dd/yyyy" />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="field cl_2">
+                                    <label>End Date: <span>*</span></label>
+                                    <div class="inputbox">
+                                      <input type="text" class="datepicker" id="datepicker1" placeholder="mm/dd/yyyy" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="field textar">
+                                <label>Remarks:</label>
+                                <div class="inputbox">
+                                  <textarea placeholder="remarks"></textarea>
+                                </div>
+                              </div>                         
                             </div>
                           </div>
-                          <div class="field">
-                            <label>Couse Code: <span>*</span></label>
-                            <div class="inputbox">
-                              <input type="text" placeholder="course code" />
-                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                          <div class="lagend c_n">
+                            <h5><span>02:Course Information</span></h5>
+                            <div class="fields">
+                              <div class="field">
+                                <label>Course Name: <span>*</span></label>
+                                <div class="inputbox">
+                                  <select name="langOpt[]" multiple id="langOpt">
+                                    <option value="C++">C++</option>
+                                    <option value="C#">C#</option>
+                                    <option value="Java">Java</option>
+                                    <option value="Objective-C">Objective-C</option>
+                                    <option value="JavaScript">JavaScript</option>
+                                    <option value="Perl">Perl</option>
+                                    <option value="PHP">PHP</option>
+                                    <option value="Ruby on Rails">Ruby on Rails</option>
+                                    <option value="Android">Android</option>
+                                    <option value="iOS">iOS</option>
+                                    <option value="HTML">HTML</option>
+                                    <option value="XML">XML</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>                        
                           </div>
-                          <div class="field">
-                            <label>Course Name: <span>*</span></label>
-                            <div class="inputbox">
-                              <input type="text" placeholder="coure name" />
-                            </div>
-                          </div>
-                          <div class="field">
-                            <label>Full Duration: <span>*</span></label>
-                            <div class="inputbox">
-                              <input type="text" placeholder="full duration" />
-                            </div>
-                          </div>
-                          <div class="field">
-                            <label>Duration Type: <span>*</span></label>
-                            <div class="inputbox">
-                              <select>
-                                <option>Month(s)</option>
-                                <option>Days(s)</option>
-                                <option>Weeks(s)</option>
-                              </select>
-                            </div>
-                          </div>
-                          <div class="field">
-                            <label>Course Fee: <span>*</span></label>
-                            <div class="inputbox">
-                              <input type="text" placeholder="course fee" />
-                            </div>
-                          </div>
-                          <div class="field textar">
-                            <label>Remarks:</label>
-                            <div class="inputbox">
-                              <textarea placeholder="remarks"></textarea>
+                          <div class="lagend a_i">
+                            <h5><span>03:Amount Information</span></h5>
+                            <div class="fields">
+                              <div class="field">
+                                <label>Total Fee: <span>*</span></label>
+                                <div class="inputbox">
+                                  <input type="text" placeholder="" />
+                                </div>
+                              </div>
+                              <div class="field">
+                                <label>Final Payment Date: <span>*</span></label>
+                                <div class="inputbox date">
+                                  <i class="far fa-calendar-alt"></i>
+                                  <input type="text" class="datepicker" id="datepicker3" placeholder="mm/dd/yyyy" />
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
