@@ -84,6 +84,39 @@ $(document).ready(function() {
   });
 });
 
+
+$(document).ready(function ($) {
+  $('#pills-tab[data-mouse="hover"] a').hover(function(){
+    $(this).tab('show');
+  });
+  $('a[data-toggle="pill"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+  });
+  $('.counting').each(function() {
+    var $this = $(this),
+        countTo = $this.attr('data-count');
+    
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+
+    {
+
+      duration: 3000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+        //alert('finished');
+      }
+
+    });  
+  });
+});
+
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
 

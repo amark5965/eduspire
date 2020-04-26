@@ -156,7 +156,7 @@ body.headerfix .home_header { position: fixed; top: 0px; left: 0px; width: 100%;
 
 
 /*===course content===*/
-.course_cont { width: 100%; padding: 50px 15px; }
+.course_cont { width: 100%; padding: 50px 15px; overflow-x: hidden; }
 .course_cont h2 {  }
 .course_cont p {  }
 .course_cont .nav-tabs {  }
@@ -291,6 +291,102 @@ body.headerfix .home_header { position: fixed; top: 0px; left: 0px; width: 100%;
 .trans_educ .educ_box .box p { font-size: 19px; line-height: 26px; }
 
 
+
+/*=======================teach eduspire page=====================*/
+#teach_banner {width: 100%; min-height: 430px; background: #505763 url(../images/header-image.jpg) center center; background-size: cover; position: relative; margin-top: 0px; padding: 0;}
+#teach_banner .banner-title { max-width: 510px;}
+#teach_banner:before {content: ""; position: absolute; bottom: 0; top: 0; left: 0; right: 0;}
+#teach_banner .container { z-index: 2;}
+#teach_banner h1.main-text {font-size: 46px; font-weight: 500; line-height: 56px; color: #fff;  text-shadow: 0 2px 4px rgba(41,48,59,.5); margin-bottom: 10.5px;}
+#teach_banner h1 span { border-bottom: 4px solid #3498db;}
+#teach_banner h2.sub-text{ color: #fff;  margin-top: 20px;  margin-bottom: 55px; line-height: 26px;font-size: 18px; font-weight: 400;}
+#teach_banner .btn-get-started { font-weight: 700; font-size: 15px; display: inline-block; padding: 17px 60px;  border-radius: 0px; transition: ease-in-out 0.3s; color: #fff;  background: #ec5252;}
+section.pt { padding-top: 60px;}
+.section-bg { background-color: #f7fbfe;}
+.section-title { text-align: center; padding-bottom: 30px;}
+.section-title h2 { font-size: 32px;  font-weight: 400; margin-bottom: 20px; padding-bottom: 20px;
+    position: relative; color: #29303b;}
+.section-title h2::before {content: '';position: absolute; display: block;width: 120px;height: 1px; bottom: 1px; left: calc(50% - 60px);}
+.section-title h2::after { content: ''; position: absolute; display: block; width: 50px; height: 2px; background: #007791; bottom: 0; left: calc(50% - 30px);}
+.section-title p { margin-bottom: 0;}
+
+/*--------------------------------------------------------------
+# What We Do
+--------------------------------------------------------------*/
+.what-we-do .icon-box { padding: 0px; transition: all ease-in-out 0.3s; text-align: center; background: #fff;}
+.what-we-do .icon-box .icon { margin: 0 auto; margin-bottom: 20px; font-size: 40px; color:#666; transition: ease-in-out 0.3s;}
+.what-we-do .icon-box .icon i { color: #686f7a; font-size: 42px;}
+.what-we-do .icon-box h4 { font-weight: 700; margin-bottom: 15px; font-size: 24px;}
+.what-we-do .icon-box h4 a { color: #29303b; transition: ease-in-out 0.3s; font-size: 18px; font-weight: 500;}
+.what-we-do .icon-box p { line-height: 24px; font-size: 15px; margin-bottom: 0;color: #29303b;}
+/*--------------------------------------------------------------
+
+
+# Counts
+--------------------------------------------------------------*/
+#counts {width: 100%; height:349px; background: #505763 url(../images/banner-2.png) center center; background-size: cover; position: relative; margin-top: 60px; padding: 0;background-position: 0 20%;}
+#counts .container.pdtop { padding-top: 55px; padding-bottom: 70px;}
+.counts h2.discover-info { font-size: 36px; color: #ffffff; font-weight: 400;}
+.counts .count-box { padding: 10px;width: 100%; position: relative; text-align: center;}
+.counts .count-box span { font-size: 55px; display: block; font-weight: 400;color: #fff;line-height: 60px;}
+.counts .count-box p {padding: 0;margin: 0; font-size: 16px; color: #ffffff;}
+.counts .add-plus span::after { content: " +"; display: inline-block;}
+.counts .add-m span::after { content: "m"; display: inline-block;}
+/*--------------------------------------------------------------
+
+
+# Team
+--------------------------------------------------------------*/
+.teach_env .member-info3 { min-height: 200px;}
+.teach_env .member-info2{ min-height: 240px;}
+.teach_env .member { text-align: center; margin-bottom: 20px; padding: 30px; background-color: #fff; border: 1px solid #dedfe0; border-radius: 4px;}
+.teach_env .member img {max-width: 90px;border-radius: 50%;margin: 0 0 30px 0;}
+.teach_env .member h4 { font-weight: 700; margin-bottom: 2px; font-size: 18px;}
+.teach_env .member span { font-style: italic; display: block; font-size: 13px;}
+.teach_env .member p { padding-top: 10px; font-size: 16px;line-height:27px; color: #29303b; text-align:left;  font-weight: 300;}
+.teach_env .member.member1 {  border-top: 8px solid #f4c150; border-radius: 4px 4px 0px 0px;}
+.teach_env .member.member2 { border-top: 8px solid #853c6c; border-radius: 4px 4px 0px 0px;}
+.teach_env .member.member3 { border-top: 8px solid #007791; border-radius: 4px 4px 0px 0px;}
+.teach_env .box2-height { max-height: 400px;}
+.teach_env h5.customer-name {  font-size: 16px;  text-align: left; padding: 0px 0px 0px 15px; font-weight: bold;}
+.teach_env h2.customer-profile { font-size: 14px; font-weight: 400; text-align: left;color: #29303b; padding: 0px 0px 0px 15px;}
+.teach_env .section-title p { font-size: 18px; }
+/*--------------------------------------------------------------
+
+
+# section-4
+--------------------------------------------------------------*/
+#section-4 .nav-pills .nav-link.active, .nav-pills .show>.nav-link { color: #fff; background-color: #ffffff;}
+#section-4 .bg-info { background-color: #fff!important;}
+#section-4 .slide-icon { color: #666; width: 95px; height: 95px;text-align: center; line-height: 95px; font-size: 50px;  display: inline-block; background-color: none; border-radius: 50%;line-height: 100px;
+  margin-bottom:10px;}
+#section-4  ul#pills-tab li { text-align: center; margin-bottom: 25px;}
+#section-4 ul#pills-tab li a { color: #505763; text-align: center; width: 100%; display: inline-block;}
+#section-4 ul#pills-tab li a span.txt {display: inline-block; font-size: 18px; font-weight: 400; width: 100%;}
+#section-4 ul#pills-tab li a span.txt span.a10 { display: inline-block; font-size: 15px; padding: 0px; border: 1px solid #ddd; border-radius: 50%; height:28px; width: 28px; text-align: center; line-height: 28px; margin-right: 10px; } 
+#section-4 ul#pills-tab li :hover { color: #007791;}
+#section-4 ul#pills-tab a.nav-link:hover .slide-icon, #section-4 ul#pills-tab a.nav-link.active .slide-icon {   color: #0f7c90;  background-color: rgba(41,48,59,.2);}
+#section-4 ul#pills-tab a.nav-link:hover span.txt, #section-4 ul#pills-tab a.nav-link.active span.txt { font-weight: 600; }
+#section-4 section.about { padding: 0px 50px; } 
+#section-4 section.about img { width: 100%;}
+/*--------------------------------------------------------------
+
+
+# section-7
+--------------------------------------------------------------*/
+#section-7 {width: 100%;  min-height: 553px; background: #505763 url(../images/header-image-2.jpg) center center;
+    background-size: cover; position: relative; margin-top: 60px; padding: 0;background-position: 0 20%;}
+#section-7 .container.pdtop { padding: 120px 0px;  }
+#section-7 .center-block.small-content { max-width: 750px; /* text-align: center; */ margin: 0px auto;}
+#section-7 h3.text-center.text-shadow.subtext { color: #ffffff; font-size: 20px; line-height: 26px; font-weight: 400;}
+#section-8 p.join-text { color: #29303b; font-size: 18px;}
+#section-8 h2{ color: #29303b; font-size: 36px;}
+#section-8 button.button.btn-get { color: #fff; background-color: #ec5252;border: 1px solid transparent;padding: 17px 60px;  margin-top: 30px; font-size: 18px;}
+#section-8 .button.btn-get:hover { background: #992337;}
+/*=======================end teach eduspire page=====================*/
+
+
+
 /*===================footer========================*/
 .h_footer { margin-top: 50px; padding: 34px 15px; width: 100%; border-top: 1px solid #ddd; position: relative; background:#fff; }
 .h_footer .f_top { width: 100%; margin-bottom: 50px; }
@@ -311,12 +407,51 @@ body.headerfix .home_header { position: fixed; top: 0px; left: 0px; width: 100%;
 
 
 /*===================modals======================*/
-.modal.show .modal-dialog { max-width: 700px; }
-.modal .modal-content { position: relative; }
-.modal .modal-content .close { display: inline-block; width: 30px; height: 30px; border-radius: 50%; border: 0px; background:#ff0000; text-align: center; line-height: 35px; color:#fff; position: absolute; top: -16px; right: -16px; opacity:1; }
-.modal video { width: 100%; height: 400px; }
+.modal-dialog.login { max-width: 400px; }
+.modal-dialog.login .modal-content { padding: 0px; }
+.modal-dialog.login .modal-header { padding: 24px 24px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.modal-dialog.login .modal-title { font-size: 16px; font-weight: 700; }
+.modal-dialog.login .modal-body { padding: 24px 24px; }
+.modal-dialog.login form { width: 100%; }
 
-/*login*/
-.modal.login .modal-dialog {  }
-.modal.login .modal-content { background:#fff; min-height: 500px; border-radius: 15px; padding: 50px 50px; }
+.modal-dialog.login form .fields { width: 100%; }
+.modal-dialog.login form .fields .inputbox { width: 100%; position: relative; margin-bottom: 8px; }
+.modal-dialog.login form .fields .inputbox input, 
+.modal-dialog.login form .fields .inputbox select { border: 1px solid #8a92a3; border-radius: 5px; padding: 11px 45px 11px 40px; width: 100%; height: 50px; font-size: 14px; display: inline-block; line-height: 28px; position: relative; z-index: 1; }
+.modal-dialog.login form .fields .inputbox textarea { border: 1px solid #8a92a3; padding: 11px 45px 11px 40px; width: 100%; display: inline-block; position: relative; z-index: 1; height: 120px; overflow-y: auto; resize: none; }
+.modal-dialog.login form .fields .inputbox span { z-index: 2; cursor: pointer; color:#807d7d; display:inline-block; position: absolute; top: 13px; left: 10px; font-size: 17px; }
+.modal-dialog.login form .fields .inputbox span.eye { right: 10px; left: auto; }
+.modal-dialog.login form .fields button[type="submit"] { width: 100%; border-radius: 0px; }
+.modal-dialog.login form .fields .forgot { width: 100%; margin-top: 10px; }
+.modal-dialog.login form .fields .forgot a { display: inline-block; }
+.modal-dialog.login form .fields .signup { width: 100%; margin-top: 15px; }
+.modal-dialog.login form .fields .signup a { font-weight: 600; display: inline-block; } 
+.modal-dialog.login form .fields .priv { font-size: 10px; margin-top: 20px; padding-bottom: 15px; border-bottom: 1px solid #ddd; }
+.modal-dialog.login form .fields .priv a { display: inline-block; }
+
+.modal-dialog.login form .field { width: 100%; margin-bottom: 8px; }
+.modal-dialog.login form label.check { margin-top: 8px; width: auto; font-size: 15px; margin-bottom: 0px; color:#3c3b37; font-weight: 300; }
+.modal-dialog.login form label.check input { display: none; }
+.modal-dialog.login form label.check span { display: inline-block; position: relative; padding-left: 24px; }
+.modal-dialog.login form label.check span svg { display: none; font-size: 17px; position: absolute; top: 3px; left: 0px; }
+.modal-dialog.login form label.check span:before { position: absolute; content: ""; display: inline-block; height: 15px; width: 15px; border: 1px solid #ddd; left: 0px; top: 4px; }
+.modal-dialog.login form label.check input:checked + span svg { display: block; color:#0f7c90; }
+.modal-dialog.login form label.check input:checked + span:before { display: none; }
+.modal-dialog.login form label a { float:right; }
+.modal-dialog.login form label.check span a { display: inline-block; margin-left: 5px; }
+
+.modal-dialog.login form .fields.frgt .buttons { margin-top: 20px; }
+.modal-dialog.login form .fields.frgt .buttons button { width: auto; }
+.modal-dialog.login form .fields.frgt .buttons a { display: inline-block; }
+.modal-dialog.login form .fields.frgt .captcha { width: 100%; margin-top: 15px; }
+
+.modal-dialog.login .btn_list { width: 100%; margin-bottom: 10px; }
+.modal-dialog.login .btn_list a.btn { display: inline-block; position: relative; text-align: left; margin-bottom: 8px; width: 100%; height: 48px; border:1px solid #dedfe0; padding: 10px 10px 10px 58px; line-height: 28px; font-size: 18px; font-weight: 700; background:#fff; box-shadow: 0 2px 2px 0 rgba(41,48,59,.24), 0 0 2px 0 rgba(41,48,59,.12); -moz-box-shadow: 0 2px 2px 0 rgba(41,48,59,.24), 0 0 2px 0 rgba(41,48,59,.12); -webkit-box-shadow: 0 2px 2px 0 rgba(41,48,59,.24), 0 0 2px 0 rgba(41,48,59,.12); } 
+.modal-dialog.login .btn_list a.btn:hover, .modal-dialog.login .btn_list a.btn:focus { background: #f2f3f5; }
+.modal-dialog.login .btn_list a.btn.fb:hover, .modal-dialog.login .btn_list a.btn.fb:focus { background: #164675; }
+.modal-dialog.login .btn_list a.btn.fb { background: #1a538a; border: 1px solid #1a538a; color:#fff; }
+.modal-dialog.login .btn_list a.btn .icon { position: absolute; font-size: 25px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: center; align-items: center; width: 48px; height: 48px; top: 0px; left: 0px;  }
 /*==================end modals==================*/
+
+
+
