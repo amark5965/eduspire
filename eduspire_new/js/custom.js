@@ -25,7 +25,7 @@ $(document).ready(function() {
   });
 
   
-  $('#course_slider, #stud_slider').owlCarousel({
+  $('#course_slider, #stud_slider, #standard_slider, #standard_slider1').owlCarousel({
       loop:false,
       nav:true,
       items:5,
@@ -43,6 +43,28 @@ $(document).ready(function() {
           },
           1000:{
               items:5
+          }
+      }
+  });
+
+  $('#student_test').owlCarousel({
+      loop:true,
+      nav:false,
+      items:1,
+      margin:15,
+      dots:true,
+      mouseDrag: true,
+      navigation:false,
+      navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      autoplay:true,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:1
           }
       }
   });
