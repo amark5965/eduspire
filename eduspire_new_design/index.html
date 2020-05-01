@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Eduspire</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Planetshare">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Planetshare">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/jquery.multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />   
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/wow.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="home_header">
+        <div class="header-top">
+            <div class="box l">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <button class="btn btn_dropdown">CBSE Class 10 <i class="fa fa-angle-down"></i></button>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">X</span>
+                </button>
+                <div class="mobile_bg"></div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <span class="close_icon" style="display: none;">X</span>
+                    <div class="searchbox dropdown">
+                        <form action="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="inputbox">
+                                <input type="text" placeholder="Search for courses, lessons and educators" />
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="dropdown-menu">
+                            <h3>Trending</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Bhunesh Sharma</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Ankit avasthi</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Vishal Sharma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="navbar-nav l">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Javascript:;" data-toggle="dropdown">Become an instructor</a>
+                            <ul class="dropdown-menu txt">
+                                <h2>Get your team access to over 4,000 top Udemy courses, anytime, anywhere.</h2>
+                                <a href="javascript:;" class="btndefault">Try Eduspire for Business</a>
+                            </ul>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="javascript:;" onclick="openNav()">Login</a>
+                            <div class="side_overley" id="side_overley" onclick="closeNav()"></div>
+                            <div id="mySidenav" class="sidenav">
+                                <div class="login_cont">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <form action="javascript:;" class="reg_form">
+                                        <div class="login_area" id="login_area">
+                                            <h2>Login</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="create_acc" onclick="createacc()">create your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                                <input type="email" id="email" placeholder="Email address" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Login</button>
+                                                <a href="javascript:;" id="log_by_email" onclick="loginemail()">Continue with email</a>
+                                                <a href="javascript:;" id="log_by_phone" onclick="loginnumber()">Continue with mobile number</a>
+                                            </div>
+                                        </div>
+                                        <div class="login_area signup_area" id="signup_area">
+                                            <h2>Join Eduspire</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="login_acc" onclick="loginacc()">login to your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Continue</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="note">
+                                        <p id="login_note">Having trouble? Please contact <a href="mailto:help@eduspire.com">help@eduspire.com</a> for further support.</p>
+                                        <p id="signup_note">By signing up, you agree to <a href="javascript:;">Terms & Conditions</a> and  <a href="javascript:;">Privacy Policy</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="home_banner">
+        <div class="container">
+            <div class="caption">
+                <h2>Crack CBSE Class 10 with</h2>
+                <h2>India's largest learning platform</h2>
+                <p>Get Plus subscription and access unlimited live and recorded courses from India's best educators</p>
+                <div class="buttons text-center">
+                    <button type="button" class="btndefault big">Get Subscription</button>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </section>
+
+
+    <section class="inner_cont hm">
+        <div class="container">
+            <div class="what_get">
+                <h2>What you'll get</h2>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/icon_what_you_get_1.svg" alt="" />
+                            </div>
+                            <div class="info">
+                                <h3>Daily Live classes</h3>
+                                <p>Chat with your educator, engage in discussions, ask your doubts, and answer polls - all while the class is going on</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/icon_what_you_get_2.svg" alt="" />
+                            </div>
+                            <div class="info">
+                                <h3>Live tests & quizzes</h3>
+                                <p>Evaluate your preparation with our regular mock tests and quizzes and get detailed analysis on your performance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/icon_what_you_get_3.svg" alt="" />
+                            </div>
+                            <div class="info">
+                                <h3>Structured courses</h3>
+                                <p>All our courses are structured in line with your exam syllabus to help you best prepare for it</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/icon_what_you_get_4.svg" alt="" />
+                            </div>
+                            <div class="info">
+                                <h3>Unlimited access</h3>
+                                <p>One subscription gets you access to all our live and recorded courses to watch from the comfort of any of your devices</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="v_pricing">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="box l">
+                                <h3>CBSE Class 10 subscription starts from <span><i class="fas fa-rupee-sign"></i>1,041/month</span></h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="box r">
+                                <a href="javascript:;" class="v_p">View Pricing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="live_class">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box l">
+                            <h2><span>Free</span>Live Classes</h2>
+                            <p>Experience Plus for free and start learning from the best</p>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box r">
+                            <ul>
+                                <li>
+                                    <div class="img">
+                                        <img src="images/live_class_1.jpg" alt="" />
+                                        <i class="far fa-play-circle"></i>
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Quiz on Polynomial for class 10th</h3>
+                                        <p>Today, 7:00 AM</p>
+                                        <p class="nm">Kunal Kishor</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="images/live_class_2.jpg" alt="" />
+                                        <i class="far fa-play-circle"></i>
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Kshitij part two [second lesson]</h3>
+                                        <p>Today, 7:00 AM</p>
+                                        <p class="nm">Chandan Sharma</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="images/live_class_3.jpg" alt="" />
+                                        <i class="far fa-play-circle"></i>
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="info">
+                                        <h3>RS AGGARWAL CLASS 10 TEST CH-9 (MEAN, MODE, MEDIAN)</h3>
+                                        <p>Today, 7:30 PM</p>
+                                        <p class="nm">Priyanka Gupta</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img">
+                                        <img src="images/live_class_4.jpg" alt="" />
+                                        <i class="far fa-play-circle"></i>
+                                        <span>Live</span>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Discussion On Allotropes Of carbon</h3>
+                                        <p>Today, 11:30 PM</p>
+                                        <p class="nm">Umo</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage_padng">
+                <div class="sldr_ttl">
+                    <h2>Prepare with Top Educators</h2>
+                    <p>Access to India's best educators is just a subscription away</p>
+                    <a href="javascript:;" class="v_all">See all</a>
+                </div>
+                <div class="stage_pad">
+                    <div class="owl-carousel" id="stage_pad_slider">
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_1.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <h3>Devinder Singh Anand</h3>
+                                        <p>I am providing specialised coaching for all competitive exams like IAS, CLAT CDS NDA SSC UGC NET etc. for more than 5 years.</p>
+                                    </div>
+                                    <p class="note">Teaches Current Affairs and 18 more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_2.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <h3>Dr Bhawna Aggarwal</h3>
+                                        <p>Plus Educator on Eduspire| Full time Tutor| 3+ years of teaching experience | Explorer | Teaching is passion| Counsellor</p>
+                                    </div>
+                                    <p class="note">Teaches CTET Paper 1 and 17 more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_3.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <h3>Ankit Dhingra</h3>
+                                        <p>✨B.Sc(H) in Chemistry ✨B.Ed ✨Pursuing M.Sc.(Chem) ✨Follow me for IX, X, XI, XII, IIT-JEE</p>
+                                    </div>
+                                    <p class="note">Teaches Chemistry and 13 more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_4.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <h3>Sikandar Baig</h3>
+                                        <p>Experience - 5+ I am Social Science Faculty Presently Working in  Kota(Kashi of Education) Rajasthan</p>
+                                    </div>
+                                    <p class="note">Teaches Social Science and 8 more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_5.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <h3>Parshant Kumar</h3>
+                                        <p>Pure mathematics ,freelancer   , movies and movies</p>
+                                    </div>
+                                    <p class="note">Teaches Mathematics and 6 more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/top_educator_6.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                    <h3>Deepak</h3>
+                                        <p>I've been teaching CBSE students for last 32 & DEFENCE aspirants for last 12+ years. So don't hesitate to turn your learning into 100% </p>
+                                    </div>
+                                    <p class="note">Teaches Mathematics and 40 more</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage_padng c_soon">
+                <div class="sldr_ttl">
+                    <h2>Courses starting soon</h2>
+                    <p>Enroll in upcoming courses that best suit your schedule and exam syllabus</p>
+                    <a href="javascript:;" class="v_all">See all</a>
+                </div>
+                <div class="stage_pad">
+                    <div class="owl-carousel" id="stage_pad_slider1">
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_1.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">English</span> <span class="sj">Mathematics</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_2.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Mathematics</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_3.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Hindi</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_4.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Social Science</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_5.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Mathematics</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:;" class="box">
+                                <div class="img">
+                                    <img src="images/course_soon_6.jpg" alt="" />
+                                </div>
+                                <div class="info">
+                                    <div class="desc">
+                                        <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Chemical Substances - Nature and Behaviour</span></p>
+                                        <h3>DComplete Course on Polynomials</h3>
+                                        <p>Starts on May 2, 2020 • 7 lessons</p>
+                                    </div>
+                                    <p class="note">Deepak</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stage_padng syllabus">
+                <div class="sldr_ttl">
+                    <h2>Comprehensive syllabusn</h2>
+                    <p>Our courses provide complete coverage of the topics you need to be prepared for</p>
+                    <a href="javascript:;" class="v_all">See all</a>
+                </div>
+                <div class="stage_pad">
+                    <div class="syllabus">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <a href="javascript:;" class="box one">
+                                    <div class="ttl">
+                                        <h3>Mathematics</h3>
+                                        <p>6 courses</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>NUMBER SYSTEMS, Algebra, Coordinate Geometry and more</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a href="javascript:;" class="box two">
+                                    <div class="ttl">
+                                        <h3>Social Science</h3>
+                                        <p>5 courses</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Democratic Politics - II, Contemporary India - II, India and the Contemporary World - II and more</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a href="javascript:;" class="box three">
+                                    <div class="ttl">
+                                        <h3>Science</h3>
+                                        <p>4 courses</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Chemical Substances - Nature and Behaviour, World of Living, Natural Phenomena and more</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a href="javascript:;" class="box four">
+                                    <div class="ttl">
+                                        <h3>Hindi</h3>
+                                        <p>3 courses</p>
+                                    </div>
+                                    <div class="desc">
+                                        <p>Grammar, Kshitij, Practice and Strategy and more</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side_scroll_ar">
+                <div class="box l sticky-top">
+                    <h2>The best way to prepare for CBSE Class 10</h2>
+                    <a href="javascript:;" class="v_all">Get Subscription</a>
+                </div>
+                <div class="box r">
+                    <ul>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_1.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_1.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Schedule that works for you</h3>
+                                <p>Enroll in unlimited courses, get a personalised schedule and never miss a live class with our timely reminders</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_2.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_2.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>No Language barrier</h3>
+                                <p>Our educators teach in English, Hindi, Malayalam, Tamil and 12 other languages, so language is never a barrier</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_3.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_3.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Learn anytime, anywhere</h3>
+                                <p>Watch our recorded classes, online or offline from the comfort of your mobile, PC or tablet</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side_scroll_ar">
+                <div class="box l sticky-top">
+                    <h2>Feels like you are in the classroom</h2>
+                    <a href="javascript:;" class="v_all">Get Subscription</a>
+                </div>
+                <div class="box r">
+                    <ul>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_4.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_4.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Interact with your educator</h3>
+                                <p>Chat with the educator, engage in discussions and ask your questions - all while the class is going on</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_5.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_5.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Answer live polls</h3>
+                                <p>Participate in live polls by the educator in class and compete for a place in the leaderboard</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_6.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_6.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Get your doubts cleared</h3>
+                                <p>Ask your doubts and get them answered immediately by the educator during classes</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="side_scroll_ar">
+                <div class="box l sticky-top">
+                    <h2>A subscription that's more than just classes</h2>
+                    <a href="javascript:;" class="v_all">Get Subscription</a>
+                </div>
+                <div class="box r">
+                    <ul>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_7.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_7.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Live tests and quizzes</h3>
+                                <p>Take live mock tests curated in line with the exam pattern to measure your progress, and stay on track</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_8.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_8.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>Detailed report and analysis</h3>
+                                <p>Get in-depth insights with topic wise scores, time spent per question and competitive stats</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vd_ar">
+                                <video autoplay muted loop>
+                                    <source src="images/video/vdo_9.mp4" type="video/mp4" />
+                                    <source src="images/video/vdo_9.webm" type="video/webm" />
+                                </video>
+                            </div>
+                            <div class="desc">
+                                <h3>PDFs and learning material</h3>
+                                <p>Get access to class notes with educator annotations for you to revisit and revise anytime</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subscrip_ar">
+                <h2>CBSE Class 10 Subscription</h2>
+                <div class="scubscp_box">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="off"></div>
+                                <p class="month">1 month</p>
+                                <p class="prce"><i class="fas fa-rupee-sign"></i>2,500</p>
+                                <p class="totl">Total (Incl. of all taxes)</p>
+                                <a href="javascript:;" class="btndefault big">Get Subscription</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="off"><span>17% off</span></div>
+                                <p class="month">3 months</p>
+                                <p class="prce"><i class="fas fa-rupee-sign"></i>6,250</p>
+                                <p class="totl">Total (Incl. of all taxes)</p>
+                                <a href="javascript:;" class="btndefault big">Get Subscription</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="off"><span>33% off</span></div>
+                                <p class="month">6 months</p>
+                                <p class="prce"><i class="fas fa-rupee-sign"></i>10,000</p>
+                                <p class="totl">Total (Incl. of all taxes)</p>
+                                <a href="javascript:;" class="btndefault big active">Get Subscription</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box">
+                                <div class="off"><span>58% off</span></div>
+                                <p class="month">12 months</p>
+                                <p class="prce"><i class="fas fa-rupee-sign"></i>12,500</p>
+                                <p class="totl">Total (Incl. of all taxes)</p>
+                                <a href="javascript:;" class="btndefault big">Get Subscription</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h_ques">
+                    <h3>Have questions? <a href="javascript:;" class="v_all">Read our FAQs</a></h3>
+                </div>
+            </div>
+            <div class="learn_test">
+                <h2>What our learners say about Plus</h2>
+                <div class="test_box">
+                    <div class="owl-carousel" id="learner_test_slider">
+                        <div class="item">
+                            <div class="box">
+                                <h4>Teaching style and behavior of teacher's to how to talk to student.</h4>
+                                <div class="reveiw_box">
+                                    <div class="left">
+                                        <h4>Anant kushwaha</h4>
+                                        <p>900 learning minutes • CBSE Class 10</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="tm">5 days ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <h4>Teaching style and behavior of teacher's to how to talk to student.</h4>
+                                <div class="reveiw_box">
+                                    <div class="left">
+                                        <h4>Anant kushwaha</h4>
+                                        <p>900 learning minutes • CBSE Class 10</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="tm">5 days ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <h4>Teaching style and behavior of teacher's to how to talk to student.</h4>
+                                <div class="reveiw_box">
+                                    <div class="left">
+                                        <h4>Anant kushwaha</h4>
+                                        <p>900 learning minutes • CBSE Class 10</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="tm">5 days ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <h4>Teaching style and behavior of teacher's to how to talk to student.</h4>
+                                <div class="reveiw_box">
+                                    <div class="left">
+                                        <h4>Anant kushwaha</h4>
+                                        <p>900 learning minutes • CBSE Class 10</p>
+                                    </div>
+                                    <div class="right">
+                                        <div class="rating">
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                            <span><i class="fas fa-star"></i></span>
+                                        </div>
+                                        <p class="tm">5 days ago</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="learn_go">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box l">
+                            <h2>Learn on the go</h2>
+                            <p>Download lessons and learn anytime, anywhere with the Eduspirelearning app</p>
+                            <div class="icons">
+                                <a href="javascript:;"><img src="images/icon_google_play.svg" alt="" /></a>
+                                <a href="javascript:;"><img src="images/icon_google_play1.svg" alt="" /></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box r">
+                            <div class="img">
+                                <img src="images/img_learn_on_go.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="h_footer">
+        <div class="container">
+            <div class="f_area">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box l">
+                            <div class="f_logo">
+                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                            </div>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copy">
+                                <p>&copy; 2020 Eduspire Pvt Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="box m">
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">About us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Terms and Conditions</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">User Guidelines</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Site Map</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Legal Notices</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Plus Subscriptions T&C</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box r">
+                            <div class="app_links">
+                                <h4>Learner app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="app_links">
+                                <h4>Educator app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modal" id="login">
+      <div class="modal-dialog login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Log In to Your Eduspire Account!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="c_form" action="javascript:;">
+                    <div class="btn_list">
+                        <a href="javascript:;" class="btn fb">
+                            <span class="icon"><i class="fab fa-facebook-f"></i></span> Continue with Facebook
+                        </a>
+                        <a href="javascript:;" class="btn">
+                            <span class="icon"><img src="images/icon_google.svg" alt="" /></span> Continue with Google
+                        </a>
+                        <a href="javascript:;" class="btn">
+                            <span class="icon"><i class="fab fa-apple"></i></span> Continue with Apple
+                        </a>
+                    </div>
+                    <div class="fields">
+                        <div class="inputbox">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="inputbox">
+                            <span class="icon"><i class="fas fa-lock"></i></span>
+                            <input type="password" placeholder="Password" />
+                            <span class="icon eye"><i class="fas fa-eye-slash"></i></span>
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" class="btndefault big">Log In</button>
+                        </div>
+                        <div class="forgot text-center">
+                            Or <a href="javascript:;" data-toggle="modal" data-target="#forgot" data-dismiss="modal">Forgot Password</a>
+                        </div>
+                        <div class="signup text-center">Don't have an account? <a href="javascript:;" data-toggle="modal" data-target="#signup" data-dismiss="modal">Sign up</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="signup">
+      <div class="modal-dialog login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sign Up and Start Learning!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="c_form" action="javascript:;">
+                    <div class="fields">
+                        <div class="inputbox">
+                            <span class="icon"><i class="far fa-user"></i></span>
+                            <input type="text" placeholder="Full Name" />
+                        </div>
+                        <div class="inputbox">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="inputbox">
+                            <span class="icon"><i class="fas fa-lock"></i></span>
+                            <input type="password" placeholder="Password" />
+                            <span class="icon eye"><i class="fas fa-eye-slash"></i></span>
+                        </div>
+                        <div class="field">
+                            <label class="check" for="remember">
+                                <input type="checkbox" id="remember" />
+                                <span><i class="far fa-check-square"></i> I’m in for emails with exciting discounts and personalized recommendations</span>
+                            </label>
+                        </div>
+                        <div class="buttons">
+                            <button type="submit" class="btndefault big">Sign Up</button>
+                        </div>
+                        <div class="priv text-center">
+                            By signing up, you agree to our <a href="JavaScript:;">Terms of Use</a> and <a href="JavaScript:;">Privacy Policy</a>.
+                        </div>
+                        <div class="signup text-center">Already have an account? <a href="javascript:;" data-toggle="modal" data-target="#login" data-dismiss="modal">Log In</a></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="forgot">
+      <div class="modal-dialog login">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Forgot Password</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="c_form" action="javascript:;">
+                    <div class="fields frgt">
+                        <div class="inputbox">
+                            <span class="icon"><i class="far fa-envelope"></i></span>
+                            <input type="email" placeholder="Email" />
+                        </div>
+                        <div class="buttons text-center">
+                            <button type="submit" class="btndefault big">Reset Password</button>
+                            Or <a href="javascript:;" data-toggle="modal" data-target="#login" data-dismiss="modal">Log In</a>
+                        </div>
+                        <div class="captcha text-center">
+                            <img src="images/img_captcha.png" alt="" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="teacher_video">
+      <div class="modal-dialog t_vd">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Teacher video</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video">
+                    <video controls id="exp_vdo_play">
+                        <source src="images/video/transcoding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="student_parent_video">
+      <div class="modal-dialog t_vd">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Student parent video</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="video">
+                    <video controls id="stud_parnt_vdo">
+                        <source src="images/video/transcoding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
