@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Eduspire</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Planetshare">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Planetshare">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/jquery.multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />   
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/wow.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="home_header">
+        <div class="header-top">
+            <div class="box l">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <button class="btn btn_dropdown">CBSE Class 10 <i class="fa fa-angle-down"></i></button>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">X</span>
+                </button>
+                <div class="mobile_bg"></div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <span class="close_icon" style="display: none;">X</span>
+                    <div class="searchbox dropdown">
+                        <form action="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="inputbox">
+                                <input type="text" placeholder="Search for courses, lessons and educators" />
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="dropdown-menu">
+                            <h3>Trending</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Bhunesh Sharma</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Ankit avasthi</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Vishal Sharma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="navbar-nav l">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Javascript:;" data-toggle="dropdown">Become an instructor</a>
+                            <ul class="dropdown-menu txt">
+                                <h2>Get your team access to over 4,000 top Udemy courses, anytime, anywhere.</h2>
+                                <a href="javascript:;" class="btndefault">Try Eduspire for Business</a>
+                            </ul>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="javascript:;" onclick="openNav()">Login</a>
+                            <div class="side_overley" id="side_overley" onclick="closeNav()"></div>
+                            <div id="mySidenav" class="sidenav">
+                                <div class="login_cont">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <form action="javascript:;" class="reg_form">
+                                        <div class="login_area" id="login_area">
+                                            <h2>Login</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="create_acc" onclick="createacc()">create your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                                <input type="email" id="email" placeholder="Email address" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Login</button>
+                                                <a href="javascript:;" id="log_by_email" onclick="loginemail()">Continue with email</a>
+                                                <a href="javascript:;" id="log_by_phone" onclick="loginnumber()">Continue with mobile number</a>
+                                            </div>
+                                        </div>
+                                        <div class="login_area signup_area" id="signup_area">
+                                            <h2>Join Eduspire</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="login_acc" onclick="loginacc()">login to your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Continue</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="note">
+                                        <p id="login_note">Having trouble? Please contact <a href="mailto:help@eduspire.com">help@eduspire.com</a> for further support.</p>
+                                        <p id="signup_note">By signing up, you agree to <a href="javascript:;">Terms & Conditions</a> and  <a href="javascript:;">Privacy Policy</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+
+    <section class="inner_cont">
+        <div class="container">
+            <div class="sidebar_ar">
+                <div class="box l sticky-top">
+                    <div class="sidebar">
+                        <ul>
+                            <li>
+                                <a href="index.html"><h4>Home</h4></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">My Schedule</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Enrolled courses</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Syllabus</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">Test series</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><h4>Free classes & tests</h4></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;"><h4>Quick courses</h4></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">My library</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box r">
+                    <div class="live_cls_ttl">
+                        <h3><span class="icon"><img src="images/icon_cbse_1.png" alt="" /></span> CBSE Class 10</h3>
+                    </div>
+
+                    <div class="watch_ar">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="bx l">
+                                    <div class="desc">
+                                        <p class="t">Unacademy UPSC Championship [All India Free Mock for Prelims 2020]</p>
+                                        <h3>All India Free Full-Length Mock Test -3- Analysis By G Rajput Sir (English+Hindi)</h3>
+                                        <p>Lesson 12 · Apr 26</p>
+                                        <div class="buttons">
+                                            <button class="btndefault big"><i class="fas fa-play"></i> Watch now</button>
+                                            <button class="btndefault big nobg"><i class="fas fa-share"></i> Share</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <div class="bx r">
+                                    <div class="img">
+                                        <img src="images/img_live_classes.jpg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="live_l_ar">
+                        <div class="tchr_ttl">
+                            <h2>Live now</h2>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                        <div class="live_n_l">
+                            <ul class="owl-carousel" id="live_now">
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_now_1.jpg" alt="" />
+                                            <span class="live">Live</span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">English</span> <span class="sj">Ancient history</span></p>
+                                                <h3>Ancient Indian History MCQ - Part 8</h3>
+                                                <p>Lesson 1 • Started at 8:00 PM</p>
+                                            </div>
+                                            <p class="note">Ranganathan SVN Kondala</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_now_2.jpg" alt="" />
+                                            <span class="live">Live</span>
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Indian Geography</span></p>
+                                                <h3>Discussion on Northern Mountains of India</h3>
+                                                <p>Lesson 1 • Started at 8:30 PM</p>
+                                            </div>
+                                            <p class="note">Sudarshan Gurjar</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="live_l_ar">
+                        <div class="tchr_ttl">
+                            <h2>Test Series</h2>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                        <div class="live_n_l tst_series">
+                            <ul class="owl-carousel" id="live_testseries">
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Unacademy UPSC Championship [All India Free Mock for Prelims 2020] </h3>
+                                                <p class="free"><span>Free</span></p>
+                                            </div>
+                                            <p class="note">Test 4 • Mar 9, 9:30 PM</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Free Mock Tests on UPSC CSE Prelims 2020</h3>
+                                                <p class="free"><span>Free</span></p>
+                                            </div>
+                                            <p class="note">Test 12 • Mar 22, 12:30 AM</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Free Mock Tests on UPSC CSAT Prelims 2020</h3>
+                                                <p class="free"><span>Free</span></p>
+                                            </div>
+                                            <p class="note">Test 4 • Mar 22, 1:30 AM</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="live_l_ar">
+                        <div class="tchr_ttl">
+                            <h2>Trending</h2>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                        <div class="live_n_l">
+                            <ul class="owl-carousel" id="live_trending">
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_trend_1.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">English</span> <span class="sj">Governance</span></p>
+                                                <h3>Chapter wise Polity MCQ series-Day 5-D.P.S.P</h3>
+                                                <p>Ended on Apr 11, 2020</p>
+                                            </div>
+                                            <p class="note">Dr Sidharth Arora</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_trend_2.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Indian Polity</span></p>
+                                                <h3>Detailed Discussion on RBI & Its Functions</h3>
+                                                <p>Ended on May 1, 2020</p>
+                                            </div>
+                                            <p class="note">Bhunesh Sharma</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_trend_3.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">English</span> <span class="sj">Physical Geography</span></p>
+                                                <h3>Discussion on Northern Mountains of India</h3>
+                                                <p>Lesson 1 • Started at 8:30 PM</p>
+                                            </div>
+                                            <p class="note">Sudarshan Gurjar</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_trend_1.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">English</span> <span class="sj">Governance</span></p>
+                                                <h3>Chapter wise Polity MCQ series-Day 5-D.P.S.P</h3>
+                                                <p>Ended on Apr 11, 2020</p>
+                                            </div>
+                                            <p class="note">Dr Sidharth Arora</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="live_l_ar">
+                        <div class="tchr_ttl">
+                            <h2>Upcoming</h2>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                        <div class="live_n_l">
+                            <ul class="owl-carousel" id="live_upcoming">
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_upcming_1.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Ancient history</span></p>
+                                                <h3>Discussion on the 'Important Sites of Harappan Culture'</h3>
+                                                <p>Ended on May 1, 2020</p>
+                                            </div>
+                                            <p class="note">Rinku singh</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_upcming_2.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">English</span> <span class="sj">Indian Economy</span></p>
+                                                <h3>External Sector - Basics & Current issues 1</h3>
+                                                <p>Ended on May 1, 2020</p>
+                                            </div>
+                                            <p class="note">Rahul kumar</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_upcming_3.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Goverment Periodicals</span></p>
+                                                <h3>GOVERNMENT SCHEMES 2020-21 For UPSC CSE (Class 9)</h3>
+                                                <p>Ended on May 1, 2020</p>
+                                            </div>
+                                            <p class="note">Satyam shrivastav</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="item">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_live_upcming_1.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <p class="sub"><span class="sbj">Hindi</span> <span class="sj">Ancient history</span></p>
+                                                <h3>Discussion on the 'Important Sites of Harappan Culture'</h3>
+                                                <p>Ended on May 1, 2020</p>
+                                            </div>
+                                            <p class="note">Rinku singh</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="live_l_ar">
+                        <div class="tchr_ttl">
+                            <h2>Featured Educators</h2>
+                            <a href="javascript:;" class="v_all">See all</a>
+                        </div>
+                        <div class="live_n_l feat_educ">
+                            <ul div class="row">
+                                <li class="col-md-6">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_feat_educ_1.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Dr Sidharth Arora <i class="fas fa-check-circle"></i></h3>
+                                                <p>Pursued M.B.B.S. and L.L.B. Advocate in Supreme Court. Has been teaching UPSC Aspirants and Law students from last 10 years. </p>
+                                            </div>
+                                            <div class="likes">
+                                                <p><span>13M</span> <span class="txt">Watch mins</span></p>
+                                                <p><span>50k</span> <span class="txt">Followers</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-md-6">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_feat_educ_2.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Mrunal Patel <i class="fas fa-check-circle"></i></h3>
+                                                <p>This is Mrunal of Mrunal dot Org</p>
+                                            </div>
+                                            <div class="likes">
+                                                <p><span>13M</span> <span class="txt">Watch mins</span></p>
+                                                <p><span>50k</span> <span class="txt">Followers</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-md-6">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_feat_educ_3.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Roman Saini <i class="fas fa-check-circle"></i></h3>
+                                                <p>Part of a great founding team at Unacademy with Gaurav, Hemesh. Movies, Guitar, Books, Teaching. </p>
+                                            </div>
+                                            <div class="likes">
+                                                <p><span>13M</span> <span class="txt">Watch mins</span></p>
+                                                <p><span>50k</span> <span class="txt">Followers</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="col-md-6">
+                                    <a href="javascript:;" class="box">
+                                        <div class="img">
+                                            <img src="images/img_feat_educ_4.jpg" alt="" />
+                                        </div>
+                                        <div class="info">
+                                            <div class="desc">
+                                                <h3>Sunil Singh <i class="fas fa-check-circle"></i></h3>
+                                                <p>I run Abhivyakti Ias Delhi/Author/Editor Abhivyakti fortnightly magazine </p>
+                                            </div>
+                                            <div class="likes">
+                                                <p><span>13M</span> <span class="txt">Watch mins</span></p>
+                                                <p><span>50k</span> <span class="txt">Followers</span></p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="h_footer">
+        <div class="container">
+            <div class="f_area">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box l">
+                            <div class="f_logo">
+                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                            </div>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copy">
+                                <p>&copy; 2020 Eduspire Pvt Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="box m">
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">About us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Terms and Conditions</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">User Guidelines</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Site Map</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Legal Notices</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Plus Subscriptions T&C</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box r">
+                            <div class="app_links">
+                                <h4>Learner app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="app_links">
+                                <h4>Educator app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

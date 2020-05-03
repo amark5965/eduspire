@@ -70,6 +70,73 @@ $(document).ready(function() {
       }
   });
 
+  $('#stage_track_slider').owlCarousel({
+      stagePadding: 150,
+      loop:false,
+      nav:true,
+      items:3,
+      margin:30,
+      dots:true,
+      mouseDrag: true,
+      navigation:true,
+      navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      autoplay:false,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+  });
+
+  $('#get_subscr').owlCarousel({
+      loop:true,
+      nav:false,
+      items:1,
+      margin:30,
+      dots:true,
+      mouseDrag: true,
+      navigation:false,
+      navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      autoplay:false,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+
+  $('#live_trending, #live_testseries, #live_now, #live_upcoming').owlCarousel({
+      loop:false,
+      nav:true,
+      items:3,
+      margin:20,
+      dots:false,
+      mouseDrag: true,
+      navigation:true,
+      navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      autoplay:false,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:3
+          },
+          1000:{
+              items:3
+          }
+      }
+  });
+
   // $('body').on('mouseenter mouseleave','.dropdown',function(e){
   //   var _d=$(e.target).closest('.dropdown');
   //   if (e.type === 'mouseenter')_d.addClass('show');
@@ -120,63 +187,50 @@ $(document).ready(function() {
       {
         $(this).text($(this).text().substr(0,28)+'...');
       }
+    }); 
+    $(".sidebar_ar .watch_ar .bx.l p.t").each(function(i){
+      len=$(this).text().length;
+      if(len>60)
+      {
+        $(this).text($(this).text().substr(0,50)+'...');
+      }
+    }); 
+    $(".sidebar_ar .watch_ar .bx.l p.t").each(function(i){
+      len=$(this).text().length;
+      if(len>60)
+      {
+        $(this).text($(this).text().substr(0,50)+'...');
+      }
+    });  
+    $(".sidebar_ar .watch_ar .bx.l h3").each(function(i){
+      len=$(this).text().length;
+      if(len>75)
+      {
+        $(this).text($(this).text().substr(0,75)+'...');
+      }
+    });
+    $(".live_l_ar .live_n_l .box .info h3").each(function(i){
+      len=$(this).text().length;
+      if(len>65)
+      {
+        $(this).text($(this).text().substr(0,65)+'...');
+      }
+    }); 
+    $(".stage_padng.c_soon .item .box .info h3").each(function(i){
+      len=$(this).text().length;
+      if(len>45)
+      {
+        $(this).text($(this).text().substr(0,45)+'...');
+      }
     });       
   });
 
-});
-
-$(document).ready(function(){
- // let scroll_link = $('.scroll');
-
- //  //smooth scrolling -----------------------
- //  scroll_link.click(function(e){
- //      e.preventDefault();
- //      let url = $('body').find($(this).attr('href')).offset().top - 95;
- //      $('html, body').animate({
- //        scrollTop : url
- //      },700);
- //      $(this).parent().addClass('active');
- //      $(this).parent().siblings().removeClass('active');
- //      return false; 
- //   });
-
- var lastId,
-    topMenu = $(".sidebar ul"),
-    topMenuHeight = topMenu.outerHeight()+50,
-
-    menuItems = topMenu.find("a"),
-
-    scrollItems = menuItems.map(function(){
-        var currentLink = $(this);
-      var item = $(currentLink.attr('href'));
-      if (item.length) { return item; }
-    });
-
-  menuItems.click(function(e){
-  var href = $(this).attr("href")
-      offsetTop = href == "#" ? 0 : $(href).offset().top - 95;
-  $('html, body').stop().animate({ 
-      scrollTop: offsetTop
-  }, 300);
-  e.preventDefault();
-  });
-
-  $(window).scroll(function(){
-   var fromTop = $(this).scrollTop()+topMenuHeight;
-   
-   var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
-       return this;
-   });
-
-   cur = cur[cur.length-1];
-   var id = cur && cur.length ? cur[0].id : "";
-   
-   if (lastId !== id) {
-       lastId = id;
-       
-       menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active");
-   }                   
+   $('body').on('click','.option li',function(){
+    var i = $(this).parents('.select_batch').attr('id');
+    var v = $(this).children().text();
+    var o = $(this).attr('id');
+    $('#'+i+' .selected').attr('id',o);
+    $('#'+i+' .selected').text(v);
   });
 });
 
@@ -217,6 +271,36 @@ function createacc() {
     document.getElementById("login_area").style.display = "none";
     document.getElementById("signup_note").style.display = "block";
     document.getElementById("login_note").style.display = "none";
+}
+
+//payment page
+function loginnumber_n() {
+    document.getElementById("tel1").style.display = "block";
+    document.getElementById("email1").style.display = "none";
+    document.getElementById("cont_code1").style.display = "block";
+    document.getElementById("log_by_email1").style.display = "block";
+    document.getElementById("log_by_phone1").style.display = "none";
+  }
+
+function loginemail_n() {
+    document.getElementById("tel1").style.display = "none";
+    document.getElementById("email1").style.display = "block";
+    document.getElementById("cont_code1").style.display = "none";
+    document.getElementById("log_by_email1").style.display = "none";
+    document.getElementById("log_by_phone1").style.display = "block";
+}
+function loginacc_n() {
+    document.getElementById("signup_area1").style.display = "none";
+    document.getElementById("login_area1").style.display = "block";
+    document.getElementById("signup_note1").style.display = "none";
+    document.getElementById("login_note1").style.display = "block";
+  }
+
+function createacc_n() {
+    document.getElementById("signup_area1").style.display = "block";
+    document.getElementById("login_area1").style.display = "none";
+    document.getElementById("signup_note1").style.display = "block";
+    document.getElementById("login_note1").style.display = "none";
 }
 
 // $(document).ready(function(){

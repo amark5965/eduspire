@@ -164,221 +164,135 @@
 
     <section class="inner_cont">
         <div class="container">
-            <div class="ch_goal">
-                <h3>Choose your goal</h3>
-            </div>
-
-            <div class="sidebar_ar">
-                <div class="box l sticky-top">
-                    <div class="sidebar">
-                        <ul>
-                            <li>
-                                <a href="#upsc" class="scroll">UPSC</a>
-                            </li>
-                            <li>
-                                <a href="#ssc_bank" class="scroll">SSC and Bank Exams</a>
-                            </li>
-                            <li>
-                                <a href="#jee_neet" class="scroll">JEE and NEET Preparation</a>
-                            </li>
-                            <li>
-                                <a href="#cbse" class="scroll">CBSE</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box r">
-                    <div class="cont_ar" id="upsc">
-                        <h4>UPSC</h4>
-                        <div class="card_l">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_upse_1.png" alt="" />
+            <div class="login_pay_ar">
+                <form action="javascript:;">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8">
+                            <div class="box l">
+                                <div class="login_cont">
+                                    <div class="reg_form">
+                                        <div class="login_area" id="login_area1">
+                                            <h2>Login</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="create_acc1" onclick="createacc_n()">create your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code1" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel1" placeholder="Enter your mobile number" />
+                                                <input type="email" id="email1" placeholder="Email address" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Login</button>
+                                                <a href="javascript:;" id="log_by_email1" onclick="loginemail_n()">Continue with email</a>
+                                                <a href="javascript:;" id="log_by_phone1" onclick="loginnumber_n()">Continue with mobile number</a>
+                                            </div>
                                         </div>
-                                        <div class="desc">
-                                            <h4>UPSC CSE</h4>
-                                            <p>14.8k courses</p>
+                                        <div class="login_area signup_area" id="signup_area1">
+                                            <h2>Join Eduspire</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="login_acc1" onclick="loginacc_n()">login to your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code1" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel1" placeholder="Enter your mobile number" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Continue</button>
+                                            </div>
                                         </div>
-                                    </a>
+                                    </div>
+                                    <div class="note">
+                                        <p id="login_note1">Having trouble? Please contact <a href="mailto:help@eduspire.com">help@eduspire.com</a> for further support.</p>
+                                        <p id="signup_note1">By signing up, you agree to <a href="javascript:;">Terms & Conditions</a> and  <a href="javascript:;">Privacy Policy</a>.</p>
+                                    </div>
+                                </div>
+                                <div class="pay_flow">
+                                    <h3>Choose a payment method</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <div class="box r">
+                                <div class="bx pay_subs">
+                                    <h3>CBSE Class 10 subscription</h3>
+                                    <p>12 months</p>
+                                    <div class="dur">
+                                        <span>Valid till 3 May, 2021</span>
+                                        <a href="javascript:;">Change duration</a>
+                                    </div>
+                                </div>
+                                <div class="bx gft">
+                                    <div class="gift_ar">
+                                        <img src="images/icon_gift.svg" alt="" />
+                                        <div class="inputbox">
+                                            <input type="text" placeholder="Have a referral code?" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bx">
+                                    <div class="pr_l">
+                                        <ul>
+                                            <li>
+                                                <span>Subscription fee</span>
+                                                <span class="pr"><i class="fas fa-rupee-sign"></i>33,898</span>
+                                            </li>
+                                            <li>
+                                                <span>SGST</span>
+                                                <span class="pr"><i class="fas fa-rupee-sign"></i>3051</span>
+                                            </li>
+                                            <li>
+                                                <span>CGST</span>
+                                                <span class="pr"><i class="fas fa-rupee-sign"></i>3051</span>
+                                            </li>
+                                            <li class="total">
+                                                <span>Total<span> (Incl. of all taxes)</span></span>
+                                                <span class="pr"><i class="fas fa-rupee-sign"></i>40,000</span>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="cont_ar" id="ssc_bank">
-                        <h4>SSC and Bank Exams</h4>
-                        <div class="card_l">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_ssc_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>Bank Exams</h4>
-                                            <p>9.2k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_ssc_2.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>SSE Exams</h4>
-                                            <p>13.6k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont_ar" id="jee_neet">
-                        <h4>JEE and NEET Preparation</h4>
-                        <div class="card_l">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_jee_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>IIT JEE</h4>
-                                            <p>5.8k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_jee_2.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>NEET UG</h4>
-                                            <p>4.6k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_jee_3.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>Foundation & NTSE</h4>
-                                            <p>1.1k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cont_ar" id="cbse">
-                        <h4>CBSE</h4>
-                        <div class="card_l">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="index.html" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 10</h4>
-                                            <p>1.8k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 11</h4>
-                                            <p>2.1k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 9</h4>
-                                            <p>1.1k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_1.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 12</h4>
-                                            <p>3.3k courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_2.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 6</h4>
-                                            <p>27 courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_2.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 7</h4>
-                                            <p>26 courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="javascript:;" class="box">
-                                        <div class="add_icon"><i class="fas fa-plus"></i></div>
-                                        <div class="icon">
-                                            <img src="images/icon_cbse_2.png" alt="" />
-                                        </div>
-                                        <div class="desc">
-                                            <h4>CBSE Class 8</h4>
-                                            <p>27 courses</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>
 
 
-    <footer class="h_footer">
+    <!-- <footer class="h_footer">
         <div class="container">
             <div class="f_area">
                 <div class="row">
@@ -478,48 +392,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
-
-    <script>
-        var lastId,
-            topMenu = $(".sidebar ul"),
-            topMenuHeight = topMenu.outerHeight()+50,
-
-            menuItems = topMenu.find("a"),
-
-            scrollItems = menuItems.map(function(){
-                var currentLink = $(this);
-              var item = $(currentLink.attr('href'));
-              if (item.length) { return item; }
-            });
-
-          menuItems.click(function(e){
-          var href = $(this).attr("href")
-              offsetTop = href == "#" ? 0 : $(href).offset().top - 95;
-          $('html, body').stop().animate({ 
-              scrollTop: offsetTop
-          }, 300);
-          e.preventDefault();
-          });
-        $(window).scroll(function(){
-           var fromTop = $(this).scrollTop()+topMenuHeight;
-           
-           var cur = scrollItems.map(function(){
-             if ($(this).offset().top < fromTop)
-               return this;
-           });
-
-           cur = cur[cur.length-1];
-           var id = cur && cur.length ? cur[0].id : "";
-           
-           if (lastId !== id) {
-               lastId = id;
-               
-               menuItems.parent().removeClass("active").end().filter("[href='#"+id+"']").parent().addClass("active");
-           }                   
-        });
-    </script>
 </body>
 
 </html>
