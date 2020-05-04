@@ -38,7 +38,7 @@
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png" alt="" /></a>
                 </div>
-                <button class="btn btn_dropdown">CBSE Class 10 <i class="fa fa-angle-down"></i></button>
+                <button class="btn btn_dropdown" onClick="parent.location='choose_your_goal.html'">CBSE Class 10 <i class="fa fa-angle-down"></i></button>
             </div>
             <nav class="navbar navbar-expand-md">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -147,6 +147,61 @@
                                                 <button type="submit" class="btn btn_login" disabled="disabled">Continue</button>
                                             </div>
                                         </div>
+                                        <div class="login_area otp_ar" id="otp_ar">
+                                            <h2>Enter OTP</h2>
+                                            <p class="o_l">We've sent an OTP to your registered mobile number</p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                                <div class="icon_edit">Edit</div>
+                                            </div>
+                                            <div class="field">
+                                                <input type="password" placeholder="One time password" />
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" placeholder="Name" />
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" placeholder="Email address" />
+                                            </div>
+                                            <div class="field">
+                                                <div class="select_batch" id="select1">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">State of residence</span> <span class="icon"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span></button>
+                                                    <ul class="dropdown-menu option" role="menu">
+                                                        <li id="1"><a href="javascript:;">State of residence</a></li>
+                                                        <li id="2"><a href="javascript:;">Delhi</a></li>
+                                                        <li id="3"><a href="javascript:;">Bihar</a></li>
+                                                        <li id="4"><a href="javascript:;">Chandigadh</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Verify OTP</button>
+                                                <p>
+                                                    <a href="javascript:;" id="resend_otp">Resend OTP</a> 
+                                                    Or 
+                                                    <a href="callto:3984939292" id="bycall">Call</a>
+                                                </p>
+                                            </div>
+                                        </div>
                                     </form>
                                     <div class="note">
                                         <p id="login_note">Having trouble? Please contact <a href="mailto:help@eduspire.com">help@eduspire.com</a> for further support.</p>
@@ -227,7 +282,7 @@
                                     <a href="javascript:;" class="box">
                                         <div class="info">
                                             <div class="desc">
-                                                <h3>Unacademy UPSC Championship [All India Free Mock for Prelims 2020] </h3>
+                                                <h3>Eduspire UPSC Championship [All India Free Mock for Prelims 2020] </h3>
                                                 <p class="free"><span>Free</span></p>
                                             </div>
                                             <p class="note">Test 4 • Mar 9, 9:30 PM</p>
@@ -260,7 +315,7 @@
                                     <a href="javascript:;" class="box">
                                         <div class="info">
                                             <div class="desc">
-                                                <h3>Unacademy UPSC Championship [All India Free Mock for Prelims 2020] </h3>
+                                                <h3>Eduspire UPSC Championship [All India Free Mock for Prelims 2020] </h3>
                                                 <p class="free"><span>Free</span></p>
                                             </div>
                                             <p class="note">Test 4 • Mar 9, 9:30 PM</p>

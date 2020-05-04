@@ -301,26 +301,38 @@ body.headerfix .home_header { position: fixed; top: 0px; left: 0px; width: 100%;
 .sidenav .login_cont .login_area h2 { font-size: 35px; }
 .sidenav .login_cont .signup_area { width: 100%; display: none; }
 .sidenav .login_cont .reg_form { width: 100%; }
-.sidenav .login_cont .reg_form .field { width: 100%; position: relative;  padding: 0px 0px 0px 0px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.sidenav .login_cont .reg_form .field { width: 100%; margin-bottom: 10px; position: relative;  padding: 0px 0px 0px 0px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
 .sidenav .login_cont .reg_form .field .flag { width: 81px; position: absolute; top: 0px; left: 0px; z-index: 4; cursor:pointer; padding: 15px 0px 15px 10px; display: inline-block; }
 .sidenav .login_cont .reg_form .field .flag:after { display: none; }
 .sidenav .login_cont .reg_form .field input { display: inline-block; position: relative; 
-z-index: 1; height: 56px; padding: 15px 15px 15px 91px; border-radius: 5px; line-height: 26px; border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+z-index: 1; height: 56px; padding: 15px 15px 15px 15px; border-radius: 5px; line-height: 26px; border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+.sidenav .login_cont .reg_form .field.dropdown input { padding: 15px 15px 15px 91px; }
 .sidenav .login_cont .reg_form .field input[type="email"] { padding: 15px 15px; display: none; }
 .sidenav .login_cont .reg_form .field .flag .icon { display: inline-block; width: 24px; }
 .sidenav .login_cont .reg_form .field .flag .code { margin-left: 5px; display: inline-block; font-size: 14px; position: relative; padding-right: 15px; }
 .sidenav .login_cont .reg_form .field .flag .code svg { position: absolute; right: 0px; top: 5px; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; }
 .sidenav .login_cont .reg_form .field.show .flag .code svg { transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; }
-.sidenav .login_cont .reg_form .field .dropdown-menu { position: absolute; width: 351px; overflow: hidden; left: 0px; padding: 10px 10px; background:#fff; border: 1px solid #ddd; border-radius: 5px; }
+.sidenav .login_cont .reg_form .field .dropdown-menu { position: absolute; max-height: 200px; overflow-y: auto; width: 351px; overflow: hidden; left: 0px; padding: 10px 10px; background:#fff; border: 1px solid #ddd; border-radius: 5px; }
 .sidenav .login_cont .reg_form .field .dropdown-menu ul { width: 100%; display: inline-block; }
 .sidenav .login_cont .reg_form .field .dropdown-menu li { padding: 5px 6px; cursor: pointer; }
 .sidenav .login_cont .reg_form .field .dropdown-menu li:hover { font-weight:600; }
 
 .sidenav .login_cont .buttons { width: 100%; margin-top: 32px; padding-bottom: 50px; display: flex; -moz-display: flex; -webkit-display: flex; -ms-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
 .sidenav .login_cont .buttons button { height: 48px; min-width: 176px; color:rgb(154, 175, 191); font-weight: 600; border: 0px; border-radius: 5px; text-align: center; padding: 10px 10px; line-height: 28px; background:rgb(240, 244, 247); }
+.sidenav .login_cont .buttons button.active { background: rgb(7, 168, 114); color:#fff; }
 .sidenav .login_cont .buttons a { display: inline-block; color:rgb(60, 72, 82); font-weight: 600; font-size: 14px; padding-bottom: 5px; border-bottom: 1px dashed rgb(60, 72, 82);  }
 .sidenav .login_cont .buttons a#log_by_phone { display: none; }
 .sidenav .login_cont .buttons a:hover { color:rgb(8, 189, 128); border-bottom: 1px dashed rgb(8, 189, 128); }
+
+.sidenav .login_cont .field .icon_edit { position: absolute; right: 10px; top: 13px; display: inline-block; color:rgb(60, 72, 82); font-weight: 600; font-size: 14px; padding-bottom: 0px; z-index: 1; cursor:pointer; border-bottom: 1px dashed rgb(60, 72, 82);  }
+.sidenav .login_cont .field .select_batch button { width: 100%; }
+.sidenav .login_cont .field .select_batch ul.dropdown-menu { max-height: 200px; overflow-y: auto; }
+.sidenav .login_cont .field .select_batch ul.dropdown-menu li { padding: 0px 6px; }
+.sidenav .login_cont .field .select_batch ul.dropdown-menu li a { padding: 5px 10px; }
+
+.sidenav .login_cont .login_area.otp_ar { display:none; }
+.sidenav .login_cont .login_area.otp_ar .buttons p { display:inline-block; margin-bottom: 0px; font-size: 14px; color:rgb(154, 175, 191); }
+.sidenav .login_cont .login_area.otp_ar p.o_l { margin-bottom: 10px; }
 
 .sidenav .closebtn { position: relative; top: 0; right: 0;color:rgb(60, 72, 82); padding: 0px; font-size: 36px; margin-left: 0px; margin-bottom: 32px;}
 
@@ -744,26 +756,40 @@ a.v_all { font-size: 20px; font-weight: 700; display: inline-block; padding-bott
 .login_pay_ar .login_cont .login_area h2 { font-size: 35px; }
 .login_pay_ar .login_cont .signup_area { width: 100%; display: none; }
 .login_pay_ar .login_cont .reg_form { width: 100%; padding-right: 35%; }
-.login_pay_ar .login_cont .reg_form .field { width: 100%; position: relative;  padding: 0px 0px 0px 0px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.login_pay_ar .login_cont .reg_form .field { width: 100%; margin-bottom: 10px; position: relative;  padding: 0px 0px 0px 0px; display: flex; -moz-display: flex; -webkit-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
 .login_pay_ar .login_cont .reg_form .field .flag { width: 81px; position: absolute; top: 0px; left: 0px; z-index: 4; cursor:pointer; padding: 15px 0px 15px 10px; display: inline-block; }
 .login_pay_ar .login_cont .reg_form .field .flag:after { display: none; }
 .login_pay_ar .login_cont .reg_form .field input { display: inline-block; position: relative; 
-z-index: 1; height: 56px; padding: 15px 15px 15px 91px; border-radius: 5px; line-height: 26px; border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+z-index: 1; height: 56px; padding: 15px 15px 15px 15px; border-radius: 5px; line-height: 26px; border: 1px solid rgba(0, 0, 0, 0.1); width: 100%; appearance: none; -moz-appearance: none; -webkit-appearance: none;}
+.login_pay_ar .login_cont .reg_form .field.dropdown input { padding: 15px 15px 15px 91px; }
 .login_pay_ar .login_cont .reg_form .field input[type="email"] { padding: 15px 15px; display: none; }
 .login_pay_ar .login_cont .reg_form .field .flag .icon { display: inline-block; width: 24px; }
 .login_pay_ar .login_cont .reg_form .field .flag .code { margin-left: 5px; display: inline-block; font-size: 14px; position: relative; padding-right: 15px; }
 .login_pay_ar .login_cont .reg_form .field .flag .code svg { position: absolute; right: 0px; top: 5px; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; }
 .login_pay_ar .login_cont .reg_form .field.show .flag .code svg { transform: rotate(180deg); -moz-transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -ms-transition: 0.3s ease-in-out; }
-.login_pay_ar .login_cont .reg_form .field .dropdown-menu { position: absolute; width: 351px; overflow: hidden; left: 0px; padding: 10px 10px; background:#fff; border: 1px solid #ddd; border-radius: 5px; }
+.login_pay_ar .login_cont .reg_form .field .dropdown-menu { position: absolute; max-height: 200px; overflow-y: auto; width: 351px; overflow: hidden; left: 0px; padding: 10px 10px; background:#fff; border: 1px solid #ddd; border-radius: 5px; }
 .login_pay_ar .login_cont .reg_form .field .dropdown-menu ul { width: 100%; display: inline-block; }
 .login_pay_ar .login_cont .reg_form .field .dropdown-menu li { padding: 5px 6px; cursor: pointer; }
 .login_pay_ar .login_cont .reg_form .field .dropdown-menu li:hover { font-weight:600; }
 
 .login_pay_ar .login_cont .buttons { width: 100%; margin-top: 32px; padding-bottom: 10px; display: flex; -moz-display: flex; -webkit-display: flex; -ms-display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
 .login_pay_ar .login_cont .buttons button { height: 48px; min-width: 176px; color:rgb(154, 175, 191); font-weight: 600; border: 0px; border-radius: 5px; text-align: center; padding: 10px 10px; line-height: 28px; background:rgb(240, 244, 247); }
+.login_pay_ar .login_cont .buttons button.active { background: rgb(7, 168, 114); color:#fff; }
 .login_pay_ar .login_cont .buttons a { display: inline-block; color:rgb(60, 72, 82); font-weight: 600; font-size: 14px; padding-bottom: 5px; border-bottom: 1px dashed rgb(60, 72, 82);  }
 .login_pay_ar .login_cont .buttons a#log_by_phone1 { display: none; }
 .login_pay_ar .login_cont .buttons a:hover { color:rgb(8, 189, 128); border-bottom: 1px dashed rgb(8, 189, 128); }
+
+.login_pay_ar .login_cont .field .icon_edit { position: absolute; right: 10px; top: 13px; display: inline-block; color:rgb(60, 72, 82); font-weight: 600; font-size: 14px; padding-bottom: 0px; z-index: 1; cursor:pointer; border-bottom: 1px dashed rgb(60, 72, 82);  }
+.login_pay_ar .login_cont .field .select_batch button { width: 100%; }
+.login_pay_ar .login_cont .field .select_batch ul.dropdown-menu { max-height: 200px; overflow-y: auto; }
+.login_pay_ar .login_cont .field .select_batch ul.dropdown-menu li { padding: 0px 6px; }
+.login_pay_ar .login_cont .field .select_batch ul.dropdown-menu li a { padding: 5px 10px; }
+
+.login_pay_ar .login_cont .login_area.otp_ar { display:none; }
+.login_pay_ar .login_cont .login_area.otp_ar .buttons p { display:inline-block; margin-bottom: 0px; font-size: 14px; color:rgb(154, 175, 191); }
+.login_pay_ar .login_cont .login_area.otp_ar p.o_l { }
+
+
 
 .login_pay_ar .pay_flow { width: 100%; border: 1px solid rgb(240, 244, 247); margin-bottom: 12px; padding: 32px 40px; border-radius: 8px; background:#fff; }
 .login_pay_ar .pay_flow h3 { font-size: 24px; margin: 0px; color:rgb(154, 175, 191); }
