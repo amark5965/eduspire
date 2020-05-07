@@ -136,6 +136,73 @@ $(document).ready(function() {
           }
       }
   });
+  $('#instrctor_test').owlCarousel({
+      loop:false,
+      nav:true,
+      items:1,
+      margin:20,
+      dots:false,
+      mouseDrag: true,
+      navigation:true,
+      navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
+      autoplay:false,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+
+  $('#instructor_story_slider').owlCarousel({
+      loop:false,
+      nav:true,
+      items:1,
+      margin:20,
+      dots:false,
+      mouseDrag: true,
+      navigation:true,
+      navText : ["<i class='fas fa-arrow-left'></i>","<i class='fas fa-arrow-right'></i>"],
+      autoplay:false,
+      animateOut: 'fadeOut',
+      animateIn: 'fadeIn',
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:1
+          },
+          1000:{
+              items:1
+          }
+      }
+  });
+
+  $('#inst_trust_sldr').owlCarousel({
+      loop:true,
+      nav:false,
+      items:5,
+      margin:50,
+      dots:true,
+      mouseDrag: true,
+      navigation:false,
+      navText : ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      autoplay:false,
+      autoplayTimeout:2000,
+      smartSpeed: 300,
+      responsive:{
+          0:{
+              items:3
+          },
+          1000:{
+              items:5
+          }
+      }
+  });
 
   // $('body').on('mouseenter mouseleave','.dropdown',function(e){
   //   var _d=$(e.target).closest('.dropdown');
@@ -232,6 +299,33 @@ $(document).ready(function() {
     $('#'+i+' .selected').attr('id',o);
     $('#'+i+' .selected').text(v);
   });
+});
+
+$(document).ready(function(){
+    $("#instructor_story_pop").on('hide.bs.modal', function () {
+      document.getElementById("exp_vdo_play").pause(); 
+      console.log("Video paused");
+    });
+    $("#instructor_story_pop").on('shown.bs.modal', function () {
+      document.getElementById("exp_vdo_play").play(); 
+      console.log("Video play");
+    });
+    $("#instructor_story_pop1").on('hide.bs.modal', function () {
+      document.getElementById("exp_vdo_play1").pause(); 
+      console.log("Video paused");
+    });
+    $("#instructor_story_pop1").on('shown.bs.modal', function () {
+      document.getElementById("exp_vdo_play1").play(); 
+      console.log("Video play");
+    });
+    $("#instructor_story_pop2").on('hide.bs.modal', function () {
+      document.getElementById("exp_vdo_play2").pause(); 
+      console.log("Video paused");
+    });
+    $("#instructor_story_pop2").on('shown.bs.modal', function () {
+      document.getElementById("exp_vdo_play2").play(); 
+      console.log("Video play");
+    });
 });
 
 function openNav() {

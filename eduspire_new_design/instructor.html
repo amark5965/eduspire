@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Eduspire</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Planetshare">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Planetshare">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link href="css/jquery-ui.min.css" rel="stylesheet" />
+    <link href="css/jquery.multiselect.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css" />   
+    <link rel="stylesheet" href="css/animate.css" type="text/css" />
+    <link rel="stylesheet" href="css/slick.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/wow.js"></script>
+	<script src="js/custom.js"></script>
+</head>
+
+<body>
+    <header class="home_header">
+        <div class="header-top">
+            <div class="box l">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <button class="btn btn_dropdown" onClick="parent.location='choose_your_goal.html'">CBSE Class 10 <i class="fa fa-angle-down"></i></button>
+            </div>
+            <nav class="navbar navbar-expand-md">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon">X</span>
+                </button>
+                <div class="mobile_bg"></div>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <span class="close_icon" style="display: none;">X</span>
+                    <div class="searchbox dropdown">
+                        <form action="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                            <div class="inputbox">
+                                <input type="text" placeholder="Search for courses, lessons and educators" />
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="clearfix"></div>
+                        </form>
+                        <div class="dropdown-menu">
+                            <h3>Trending</h3>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Bhunesh Sharma</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Ankit avasthi</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;"><i class="fas fa-directions"></i> Vishal Sharma</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="navbar-nav l">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="Javascript:;" data-toggle="dropdown">Become an instructor</a>
+                            <ul class="dropdown-menu txt">
+                                <h2>Get your team access to over 4,000 top Eduspire courses, anytime, anywhere.</h2>
+                                <a href="javascript:;" class="btndefault">Try Eduspire for Business</a>
+                            </ul>
+                        </li> 
+                        <li class="nav-item">
+                            <a class="nav-link btn" href="javascript:;" onclick="openNav()">Login</a>
+                            <div class="side_overley" id="side_overley" onclick="closeNav()"></div>
+                            <div id="mySidenav" class="sidenav">
+                                <div class="login_cont">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <form action="javascript:;" class="reg_form">
+                                        <div class="login_area" id="login_area">
+                                            <h2>Login</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="create_acc" onclick="createacc()">create your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                                <input type="email" id="email" placeholder="Email address" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Login</button>
+                                                <a href="javascript:;" id="log_by_email" onclick="loginemail()">Continue with email</a>
+                                                <a href="javascript:;" id="log_by_phone" onclick="loginnumber()">Continue with mobile number</a>
+                                            </div>
+                                        </div>
+                                        <div class="login_area signup_area" id="signup_area">
+                                            <h2>Join Eduspire</h2>
+                                            <p class="o_l">or <a href="javascript:;" id="login_acc" onclick="loginacc()">login to your account</a></p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Continue</button>
+                                            </div>
+                                        </div>
+                                        <div class="login_area otp_ar" id="otp_ar">
+                                            <h2>Enter OTP</h2>
+                                            <p class="o_l">We've sent an OTP to your registered mobile number</p>
+                                            <div class="field dropdown">
+                                                <div class="flag dropdown-toggle" id="cont_code" data-toggle="dropdown">
+                                                    <div class="icon">
+                                                        <img src="images/icon_flag_1.png" alt="" />
+                                                    </div>
+                                                    <span class="code">+91 <i class="fa fa-angle-down"></i></span>
+                                                </div>
+                                                <div class="dropdown-menu">
+                                                    <ul>
+                                                        <li>
+                                                            <span>Afganistan</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Afgania</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>Alberia</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <input type="tel" id="tel" placeholder="Enter your mobile number" />
+                                                <div class="icon_edit">Edit</div>
+                                            </div>
+                                            <div class="field">
+                                                <input type="password" placeholder="One time password" />
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" placeholder="Name" />
+                                            </div>
+                                            <div class="field">
+                                                <input type="text" placeholder="Email address" />
+                                            </div>
+                                            <div class="field">
+                                                <div class="select_batch" id="select1">
+                                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="selected">State of residence</span> <span class="icon"><i class="fa fa-angle-down"></i><i class="fa fa-angle-up"></i></span></button>
+                                                    <ul class="dropdown-menu option" role="menu">
+                                                        <li id="1"><a href="javascript:;">State of residence</a></li>
+                                                        <li id="2"><a href="javascript:;">Delhi</a></li>
+                                                        <li id="3"><a href="javascript:;">Bihar</a></li>
+                                                        <li id="4"><a href="javascript:;">Chandigadh</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="buttons">
+                                                <button type="submit" class="btn btn_login" disabled="disabled">Verify OTP</button>
+                                                <p>
+                                                    <a href="javascript:;" id="resend_otp">Resend OTP</a> 
+                                                    Or 
+                                                    <a href="callto:3984939292" id="bycall">Call</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <div class="note">
+                                        <p id="login_note">Having trouble? Please contact <a href="mailto:help@eduspire.com">help@eduspire.com</a> for further support.</p>
+                                        <p id="signup_note">By signing up, you agree to <a href="javascript:;">Terms & Conditions</a> and  <a href="javascript:;">Privacy Policy</a>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+    </header>
+
+    <section class="inner_cont instrctor">
+        <div class="inst_sec f">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <h2>Upskill your people with <span>virtual training</span></h2>
+                        <div class="desc">
+                            <p>Upskill your people with virtual training Empower your remote workforce to learn what they need, when they need it. Online learning from global experts across tech, business, wellness and more to help your employees do whatever comes next.</p>
+                        </div>
+                        <form action="javascript:">
+                            <div class="req_demo">
+                                <div class="inputbox">
+                                    <input type="email" placeholder="Email address *" />
+                                </div>
+                                <button type="submit" class="btndefault big">Request a demo</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inst_trust">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="container">
+                <h3>Trusted by</h3>
+                <div class="inst_trust_slider">
+                    <div class="owl-carousel" id="inst_trust_sldr">
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_1_1.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_2_2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_3_3.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_4_4.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_5_5.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_1_1.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_2_2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_3_3.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_4_4.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="javascript:" class="box">
+                                <img src="images/instr_trust_5_5.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inst_sec achv_lernng wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <h2>Achieve learning outcomes, <span>faster</span></h2>
+                        <div class="desc">
+                            <p>Everyone’s learning journey is different. Create impactful and relevant learning paths to achieve the outcomes you want. We have the tools you need to unlock knowledge at your organization.</p>
+                            <a href="javascript:" class="v_all">Learn more</a>
+                        </div>
+                        <div class="req_demo">
+                            <button type="submit" class="btndefault big">Request a demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inst_sec cours_coll wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <p class="t">Course Collection</p>
+                        <h2>4,000+ fresh & <span>in-demand</span> courses</h2>
+                        <div class="desc">
+                            <p>High-quality content alone isn’t sufficient. Our marketplace content model ensures that we always have the most recent and high-quality content that makes learning enjoyable. We’ll always have the latest skills on the most important topics your employees need to stay ahead of the curve.</p>
+                            <a href="javascript:" class="v_all">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inst_sec smrt_pers wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <h2>Smart & <span>personalized</span></h2>
+                        <div class="desc">
+                            <p>Our sophisticated learning recommendations deepen skills and are personalized to drive employee engagement, creating a happier workforce.</p>
+                            <a href="javascript:" class="v_all">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="inst_sec int_connct wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <p class="t">International Collection</p>
+                        <h2>An <span>authentic learning experience</span> for your global employees</h2>
+                        <div class="desc">
+                            <p>Learn from native-speaking experts around the world across critical business and technical skills. Courses available in French, German, Spanish, Brazilian Portuguese and Japanese.</p>
+                            <a href="javascript:" class="v_all">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="instrctor_str">
+            <div class="inst_story_sld">
+                <div class="owl-carousel" id="instructor_story_slider">
+                    <div class="item">
+                        <div class="icon" data-toggle="modal" data-target="#instructor_story_pop"><i class="fas fa-play"></i></div>
+                        <img src="images/instructor_watch_story1.jpg" alt="" />
+                        <div class="container">
+                            <div class="box">
+                                <p>Watch Pinterest's Success Story</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-toggle="modal" data-target="#instructor_story_pop1">
+                        <div class="icon"><i class="fas fa-play"></i></div>
+                        <img src="images/instructor_watch_story2.jpg" alt="" />
+                        <div class="container">
+                            <div class="box">
+                                <p>Watch on24's Success Story</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" data-toggle="modal" data-target="#instructor_story_pop2">
+                        <div class="icon"><i class="fas fa-play"></i></div>
+                        <img src="images/instructor_watch_story3.jpg" alt="" />
+                        <div class="container">
+                            <div class="box">
+                                <p>Watch Valin's Success Story</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inst_sec mesur_roi wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <h2>We deliver <span>measurable</span> ROI</h2>
+                        <div class="desc">
+                            <p>According to a 2019 IDC report, companies see up to 869% ROI when partnering with us. Whether it’s increasing productivity, streamlining onboarding, or saving on costs, we partner with you to create innovative programs that make an impact at your organization.</p>
+                            <a href="javascript:" class="v_all">Read the report</a>
+                        </div>
+                        <div class="req_demo">
+                            <button type="submit" class="btndefault big">Request a demo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inst_sec learn_part wttxt">
+            <div class="over_bg">
+                <img src="images/bg_effect_inst.svg" alt="" />
+            </div>
+            <div class="left_bg"></div>
+            <div class="right_bg"><div class="img"></div></div>
+            <div class="container">
+                <div class="cont_prt">
+                    <div class="box">
+                        <p class="t">Learning Engagement</p>
+                        <h2>Your strategic learning <span>partner</span></h2>
+                        <div class="desc">
+                            <p>Driving effective learning is a challenge — but it doesn’t have to be that way. We are the true learning partner that helps impact your business from top to bottom. From strategy to execution, we’re alongside you throughout this journey.</p>
+                            <a href="javascript:" class="v_all">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inst_test">
+            <div class="container">
+                <div class="i_t_sl">
+                    <div class="quote"><i class="fas fa-quote-left"></i></div>
+                    <div class="owl-carousel" id="instrctor_test">
+                        <div class="item">
+                            <div class="box">
+                                <p>We wanted to enrich the technical and soft skills learning experience for consultants and business managers and therefore, needed an offering that met the high demands of our program.</p>
+                                <div class="ttl">
+                                    <p class="hdng">Thibaut Yven</p>
+                                    <p class="sub_hdng">Head of Learning at the AKKAdemy</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="box">
+                                <p>We wanted to enrich the technical and soft skills learning experience for consultants and business managers and therefore, needed an offering that met the high demands of our program.</p>
+                                <div class="ttl">
+                                    <p class="hdng">Thibaut Yven</p>
+                                    <p class="sub_hdng">Head of Learning at the AKKAdemy</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inst_webinar">
+            <div class="container">
+                <div class="webnr_box">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box l">
+                                <div class="tag">
+                                    <span>Ebook</span>
+                                </div>
+                                <div class="desc">
+                                    <p>Leader’s Guide to Navigating Change in a Remote Workplace</p>
+                                    <a href="javascript:" class="v_all">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="box r">
+                                <div class="tag">
+                                    <span>Webinar</span>
+                                </div>
+                                <div class="desc">
+                                    <p>Eduspire Connect: A Virtual Miniseries for People Leaders</p>
+                                    <p><span>Watch webinar on demand</span></p>
+                                    <a href="javascript:" class="v_all">Watch now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="request_demo">
+            <div class="container">
+                <div class="demo_box">
+                    <p class="t">Empower your team. Lead the industry.</p>
+                    <h3>We're your strategic learning partner to help move skills forward.</h3>
+                    <div class="button">
+                        <a href="javascript:" class="btndefault big">Request a free demo</a>
+                    </div>
+                    <div class="fr_pln">
+                        <p>Have a team of 5-20? <a href="javascript:">Get a free trial of team plan here.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="h_footer">
+        <div class="container">
+            <div class="f_area">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box l">
+                            <div class="f_logo">
+                                <a href="index.html"><img src="images/logo.png" alt="" /></a>
+                            </div>
+                            <div class="social_links">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-youtube"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;"><i class="fab fa-linkedin-in"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copy">
+                                <p>&copy; 2020 Eduspire Pvt Ltd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="box m">
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">About us</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Blogs</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Terms and Conditions</a>
+                                </li>
+                            </ul>
+                            <ul class="links">
+                                <li>
+                                    <a href="javascript:;">User Guidelines</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Site Map</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Legal Notices</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;">Plus Subscriptions T&C</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box r">
+                            <div class="app_links">
+                                <h4>Learner app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="app_links">
+                                <h4>Educator app</h4>
+                                <div class="icons">
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play.svg" alt="" />
+                                    </a>
+                                    <a href="javascript:;">
+                                        <img src="images/icon_google_play1.svg" alt="" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="modal" id="instructor_story_pop">
+      <div class="modal-dialog t_vd">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <div class="video">
+                    <video controls id="exp_vdo_play">
+                        <source src="images/video/transcoding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="instructor_story_pop1">
+      <div class="modal-dialog t_vd">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <div class="video">
+                    <video controls id="exp_vdo_play1">
+                        <source src="images/video/transcoding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="instructor_story_pop2">
+      <div class="modal-dialog t_vd">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div class="modal-body">
+                <div class="video">
+                    <video controls id="exp_vdo_play2">
+                        <source src="images/video/transcoding.mp4" type="video/mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>
