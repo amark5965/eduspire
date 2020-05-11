@@ -204,14 +204,18 @@ $(document).ready(function() {
       }
   });
 
-  // $('body').on('mouseenter mouseleave','.dropdown',function(e){
-  //   var _d=$(e.target).closest('.dropdown');
-  //   if (e.type === 'mouseenter')_d.addClass('show');
-  //   setTimeout(function(){
-  //     _d.toggleClass('show', _d.is(':hover'));
-  //     $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
-  //   },0);
-  // });
+  $('.dash_header').on('mouseenter mouseleave','.dropdown',function(e){
+    var _d=$(e.target).closest('.dropdown');
+    if (e.type === 'mouseenter')_d.addClass('show');
+    setTimeout(function(){
+      _d.toggleClass('show', _d.is(':hover'));
+      $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
+    },0);
+  });
+
+  $('.dash_cont .cirrclm_l li .box .title').click(function() {
+    $(this).toggleClass('active');
+  });
 
   // $('.trans_educ .educ_box .box .vdo').click(function() {
   //   $(this).addClass('play_i');
