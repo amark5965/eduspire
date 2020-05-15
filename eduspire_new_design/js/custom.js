@@ -213,8 +213,46 @@ $(document).ready(function() {
     },0);
   });
 
+  $('#file_upload').change(function() {
+    var i = $(this).prev('button').clone();
+    var file = $('#file_upload')[0].files[0].name;
+    $(this).prev('button').text(file);
+  });
+
   $('.dash_cont .cirrclm_l li .box .title').click(function() {
     $(this).toggleClass('active');
+  });
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#thumb_img').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  $("#thumb_image").change(function(){
+      readURL(this);
+  });
+
+  function readURL1(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        
+        reader.onload = function (e) {
+            $('#user_prof_img').attr('src', e.target.result);
+        }
+        
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  $("#profile_image").change(function(){
+      readURL1(this);
   });
 
   // $('.trans_educ .educ_box .box .vdo').click(function() {

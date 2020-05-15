@@ -45,19 +45,14 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <span class="close_icon" style="display: none;">X</span>
                     <ul class="navbar-nav l">
-                        <li class="nav-item std dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="javascript:">Student</a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                   <p>Switch to the student view here - get back to the courses you’re taking.</p>
-                                </li>                               
-                            </ul>
+                        <li class="nav-item std">
+                            <a class="nav-link" href="index.html">Student</a>
                         </li>
                         <li class="nav-item u_lgn dropdown">
                             <a class="nav-link dropdown-toggle" href="javascript:" data-toggle="dropdown"><span>A</span></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                   <a href="javascript:" class="usr">
+                                   <a href="instructor_profile.html" class="usr">
                                        <div class="icon">
                                            <span>A</span>
                                        </div>
@@ -96,7 +91,7 @@
         <div class="dash_sidebar">
             <ul class="side_l">
                 <li class="lg">
-                    <a href="javascript:"><img src="images/logo_d.png" alt="" /></a>
+                    <a href="dashboard.html"><img src="images/logo_d.png" alt="" /></a>
                 </li>
                 <li>
                     <a href="javascript:">
@@ -152,6 +147,97 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="step">
+                            <h2>Add your class title</h2>
+                            <p class="top">If you're not sure about the right category, you can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Title" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>Add short description to define your title.</h2>
+                            <p class="top">If you're not sure about the right category, you can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <textarea placeholder="Short Description"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>How many languages?</h2>
+                            <p class="top">If you're not sure about the right category, you can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <select>
+                                        <option>Select language</option>
+                                        <option>Hindi</option>
+                                        <option>English</option>
+                                        <option>French</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>Add total duration</h2>
+                            <p class="top">If you're not sure about the right category, you can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Total duration" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>How many lecture?</h2>
+                            <p class="top">It's ok if you can't think of a good title now. You can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <input type="text" placeholder="Total Lecture" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>Upload Image?</h2>
+                            <p class="top">It's ok if you can't think of a good title now. You can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <div class="upl_ara sml">
+                                        <div class="upl_box">
+                                            <label for="thumb_image">
+                                                <input type="file" name="user[image]" multiple="" id="thumb_image" />
+                                                <div class="drag"></div>
+                                                <img class="cl_thumb" src="" id="thumb_img" alt="" />
+                                                <button class="btndefault img_u" type="button">Upload Image</button>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <h2>Upload Video?</h2>
+                            <p class="top">It's ok if you can't think of a good title now. You can change it later.</p>
+                            <div class="field">
+                                <div class="inputbox">
+                                    <div class="upl_ara">
+                                        <div class="upl_box">
+                                            <label for="upload_video">
+                                                <input type="file" name="user[image]" multiple="" id="upload_video" />
+                                                <button class="btndefault" type="button">Upload video</button>
+                                                <span class="note">(.eps files or jpegs that are at least 4.0 megapixels)</span>
+                                            </label>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="c_cirriclm" id="cirriclm">
                             <div class="ceirrclm_cont">
                                 <h2>Curriculum</h2>
